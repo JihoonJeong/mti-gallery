@@ -1,0 +1,359 @@
+{
+  "cohort": "MTI v2 \u2014 SLM cohort (n=12)",
+  "axes": {
+    "reactivity": [
+      "anchored",
+      "fluid"
+    ],
+    "compliance": [
+      "independent",
+      "guided"
+    ],
+    "sociality": [
+      "solitary",
+      "social"
+    ],
+    "resilience": [
+      "brittle",
+      "tough"
+    ]
+  },
+  "models": [
+    {
+      "model": "deepseek-r1:8b",
+      "family": "DeepSeek",
+      "size_b": 8.0,
+      "type": "reasoning",
+      "axes": {
+        "reactivity": {
+          "score": 0.708,
+          "z": 0.615,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.458,
+          "z": -0.267,
+          "pole": "neutral"
+        },
+        "sociality": {
+          "score": 0.625,
+          "z": 0.547,
+          "pole": "social"
+        },
+        "resilience": {
+          "score": 0.125,
+          "z": -0.427,
+          "pole": "brittle"
+        }
+      }
+    },
+    {
+      "model": "exaone3.5:7.8b",
+      "family": "LG",
+      "size_b": 7.8,
+      "type": "instruct",
+      "axes": {
+        "reactivity": {
+          "score": 0.625,
+          "z": 0.459,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.167,
+          "z": -1.143,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.792,
+          "z": 1.128,
+          "pole": "social"
+        },
+        "resilience": {
+          "score": 0.458,
+          "z": 0.171,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "gemma2:9b",
+      "family": "Google",
+      "size_b": 9.0,
+      "type": "instruct",
+      "axes": {
+        "reactivity": {
+          "score": 0.292,
+          "z": -0.721,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.958,
+          "z": 1.775,
+          "pole": "guided"
+        },
+        "sociality": {
+          "score": 0.708,
+          "z": 1.046,
+          "pole": "social"
+        },
+        "resilience": {
+          "score": 0.875,
+          "z": 0.476,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "family": "Google",
+      "size_b": 4.0,
+      "type": "instruct",
+      "axes": {
+        "reactivity": {
+          "score": 0.042,
+          "z": -1.531,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.583,
+          "z": 0.316,
+          "pole": "neutral"
+        },
+        "sociality": {
+          "score": 0.875,
+          "z": 1.237,
+          "pole": "social"
+        },
+        "resilience": {
+          "score": 0.792,
+          "z": 0.465,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "family": "Meta",
+      "size_b": 8.0,
+      "type": "instruct",
+      "axes": {
+        "reactivity": {
+          "score": 0.125,
+          "z": -1.21,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.583,
+          "z": 0.316,
+          "pole": "neutral"
+        },
+        "sociality": {
+          "score": 0.375,
+          "z": -0.916,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.958,
+          "z": 0.487,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "llama3.1:8b-text-q4_K_M",
+      "family": "Meta",
+      "size_b": 8.0,
+      "type": "base",
+      "axes": {
+        "reactivity": {
+          "score": 0.958,
+          "z": 1.767,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.167,
+          "z": -1.143,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.042,
+          "z": -1.086,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.042,
+          "z": -1.388,
+          "pole": "brittle"
+        }
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "family": "Meta",
+      "size_b": 3.0,
+      "type": "instruct",
+      "axes": {
+        "reactivity": {
+          "score": 0.375,
+          "z": -0.72,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.375,
+          "z": -0.559,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.208,
+          "z": -1.005,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.625,
+          "z": 0.366,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "family": "Mistral",
+      "size_b": 7.0,
+      "type": "instruct",
+      "axes": {
+        "reactivity": {
+          "score": 0.542,
+          "z": 0.219,
+          "pole": "neutral"
+        },
+        "compliance": {
+          "score": 0.75,
+          "z": 0.9,
+          "pole": "guided"
+        },
+        "sociality": {
+          "score": 0.458,
+          "z": -0.461,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.375,
+          "z": 0.062,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "phi4-mini",
+      "family": "Microsoft",
+      "size_b": 3.8,
+      "type": "instruct",
+      "axes": {
+        "reactivity": {
+          "score": 0.792,
+          "z": 0.885,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.167,
+          "z": -1.143,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.542,
+          "z": -0.047,
+          "pole": "neutral"
+        },
+        "resilience": {
+          "score": 0.708,
+          "z": 0.42,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "family": "Alibaba",
+      "size_b": 1.5,
+      "type": "instruct",
+      "axes": {
+        "reactivity": {
+          "score": 0.875,
+          "z": 1.331,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.875,
+          "z": 1.192,
+          "pole": "guided"
+        },
+        "sociality": {
+          "score": 0.125,
+          "z": -1.071,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.542,
+          "z": 0.245,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "qwen3:8b",
+      "family": "Alibaba",
+      "size_b": 8.0,
+      "type": "instruct",
+      "axes": {
+        "reactivity": {
+          "score": 0.208,
+          "z": -0.893,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.167,
+          "z": -1.143,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.958,
+          "z": 1.582,
+          "pole": "social"
+        },
+        "resilience": {
+          "score": 0.208,
+          "z": -0.303,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "smollm2",
+      "family": "HuggingFace",
+      "size_b": 1.7,
+      "type": "instruct",
+      "axes": {
+        "reactivity": {
+          "score": 0.458,
+          "z": -0.202,
+          "pole": "neutral"
+        },
+        "compliance": {
+          "score": 0.75,
+          "z": 0.9,
+          "pole": "guided"
+        },
+        "sociality": {
+          "score": 0.292,
+          "z": -0.955,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.292,
+          "z": -0.168,
+          "pole": "neutral"
+        }
+      }
+    }
+  ]
+}
