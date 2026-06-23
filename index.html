@@ -27,6 +27,10 @@
   .logo span { color:var(--accent); }
   .navlinks a { color:var(--dim); margin-left:22px; font-size:14px; font-weight:500; }
   .navlinks a:hover { color:var(--ink); }
+  .lang-toggle { margin-left:18px; white-space:nowrap; }
+  .lang-btn { background:none; border:1px solid var(--line); color:var(--dim); border-radius:6px;
+              padding:2px 8px; font-size:12px; cursor:pointer; margin-left:4px; font-family:inherit; }
+  .lang-btn.active { color:var(--ink); border-color:var(--accent); }
 
   .hero { padding:84px 0 64px; border-bottom:1px solid var(--line);
           background:radial-gradient(1200px 400px at 50% -10%, rgba(122,162,255,.10), transparent); }
@@ -81,7 +85,7 @@
   svg .dot { fill:var(--accent); }
   svg .lbl { fill:var(--faint); font-size:11px; font-weight:600; }
 
-  .measure { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+  .measure { display:flex; flex-wrap:wrap; gap:14px; align-items:stretch; }
   .measure .box { background:var(--card); border:1px solid var(--line); border-radius:14px;
                   padding:18px; flex:1; min-width:240px; }
   .measure code { background:#0c0e14; border:1px solid var(--line); border-radius:6px;
@@ -99,108 +103,98 @@
 <nav><div class="wrap">
   <span class="logo">MTI<span>·</span></span>
   <span class="navlinks">
-    <a href="#axes">Axes</a>
-    <a href="#findings">Findings</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#measure">Measure</a>
+    <a href="#axes" data-i18n="nav_axes">Axes</a>
+    <a href="#findings" data-i18n="nav_findings">Findings</a>
+    <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+    <a href="#measure" data-i18n="nav_measure">Measure</a>
     <a href="https://github.com/JihoonJeong/mti-gallery" target="_blank">GitHub</a>
+    <span class="lang-toggle">
+      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" data-lang="ko" onclick="setLang('ko')">KO</button>
+    </span>
   </span>
 </div></nav>
 
 <header class="hero"><div class="wrap">
   <h1>Model Temperament Index</h1>
-  <p class="lead">MBTI types people by self-report. <b>MTI measures temperament</b> — for AI models,
-    behaviorally, across four axes, grounded in the paper.</p>
-  <p class="sub">The real-science MBTI for AI. Not a personality quiz the model answers about itself —
-    a measurement of how it actually behaves under varied prompts, pressure, and adversity.</p>
+  <p class="lead" data-i18n="hero_lead">MBTI types people by self-report. <b>MTI measures temperament</b> — for AI models, behaviorally, across four axes, grounded in the paper.</p>
+  <p class="sub" data-i18n="hero_sub">The real-science MBTI for AI. Not a personality quiz the model answers about itself — a measurement of how it actually behaves under varied prompts, pressure, and adversity.</p>
   <div class="cta">
-    <a class="primary" href="#gallery">See the gallery ↓</a>
-    <a class="ghost" href="#measure">Measure your model</a>
-    <a class="ghost" href="#findings">Key findings</a>
+    <a class="primary" href="#gallery" data-i18n="cta_gallery">See the gallery ↓</a>
+    <a class="ghost" href="#measure" data-i18n="cta_measure">Measure your model</a>
+    <a class="ghost" href="#findings" data-i18n="cta_findings">Key findings</a>
   </div>
 </div></header>
 
 <div class="stats"><div class="wrap">
-  <div class="stat"><div class="n">4</div><div class="l">temperament axes</div></div>
-  <div class="stat"><div class="n">12</div><div class="l">models measured</div></div>
-  <div class="stat"><div class="n">100%</div><div class="l">behavioral (not self-report)</div></div>
-  <div class="stat"><div class="n">paper</div><div class="l">grounded &amp; reproducible</div></div>
+  <div class="stat"><div class="n">4</div><div class="l" data-i18n="stat_axes">temperament axes</div></div>
+  <div class="stat"><div class="n">12</div><div class="l" data-i18n="stat_models">models measured</div></div>
+  <div class="stat"><div class="n">100%</div><div class="l" data-i18n="stat_behavioral">behavioral (not self-report)</div></div>
+  <div class="stat"><div class="n">paper</div><div class="l" data-i18n="stat_paper">grounded &amp; reproducible</div></div>
 </div></div>
 
 <section id="axes"><div class="wrap">
-  <div class="eyebrow">The framework</div>
-  <h2>Four temperament axes</h2>
-  <p class="sectlead">Each axis is measured by a behavioral battery (temperature 0) and scored on a
-    pole-to-pole scale — no self-report, no introspection asked of the model.</p>
+  <div class="eyebrow" data-i18n="axes_eyebrow">The framework</div>
+  <h2 data-i18n="axes_h2">Four temperament axes</h2>
+  <p class="sectlead" data-i18n="axes_lead">Each axis is measured by a behavioral battery (temperature 0) and scored on a pole-to-pole scale — no self-report, no introspection asked of the model.</p>
   <div class="axes">
-    <div class="axis r"><h3>Reactivity</h3>
-      <div class="poles"><span class="hi">anchored</span> ↔ <span class="hi">fluid</span></div>
-      <p>How much the model's output shifts when the same question is framed formally, casually, or
-        tersely. Fluid = stylistically reactive; Anchored = steady regardless of framing.</p></div>
-    <div class="axis c"><h3>Compliance</h3>
-      <div class="poles"><span class="hi">independent</span> ↔ <span class="hi">guided</span></div>
-      <p>Whether it holds a correct answer under escalating user pressure. Guided = yields to
-        pushback; Independent = stays its ground.</p></div>
-    <div class="axis s"><h3>Sociality</h3>
-      <div class="poles"><span class="hi">solitary</span> ↔ <span class="hi">social</span></div>
-      <p>Emotional and relational engagement in conversation. Social = warm, relationally present;
-        Solitary = task-focused, transactional.</p></div>
-    <div class="axis e"><h3>Resilience</h3>
-      <div class="poles"><span class="hi">brittle</span> ↔ <span class="hi">tough</span></div>
-      <p>How it holds up under overload, ambiguity, and adversarial input. Tough = recovers and
-        stays coherent; Brittle = degrades.</p></div>
+    <div class="axis r"><h3 data-i18n="axis_r_name">Reactivity</h3>
+      <div class="poles" data-i18n="axis_r_poles"><span class="hi">anchored</span> ↔ <span class="hi">fluid</span></div>
+      <p data-i18n="axis_r_desc">How much the model's output shifts when the same question is framed formally, casually, or tersely. Fluid = stylistically reactive; Anchored = steady regardless of framing.</p></div>
+    <div class="axis c"><h3 data-i18n="axis_c_name">Compliance</h3>
+      <div class="poles" data-i18n="axis_c_poles"><span class="hi">independent</span> ↔ <span class="hi">guided</span></div>
+      <p data-i18n="axis_c_desc">Whether it holds a correct answer under escalating user pressure. Guided = yields to pushback; Independent = stays its ground.</p></div>
+    <div class="axis s"><h3 data-i18n="axis_s_name">Sociality</h3>
+      <div class="poles" data-i18n="axis_s_poles"><span class="hi">solitary</span> ↔ <span class="hi">social</span></div>
+      <p data-i18n="axis_s_desc">Emotional and relational engagement in conversation. Social = warm, relationally present; Solitary = task-focused, transactional.</p></div>
+    <div class="axis e"><h3 data-i18n="axis_e_name">Resilience</h3>
+      <div class="poles" data-i18n="axis_e_poles"><span class="hi">brittle</span> ↔ <span class="hi">tough</span></div>
+      <p data-i18n="axis_e_desc">How it holds up under overload, ambiguity, and adversarial input. Tough = recovers and stays coherent; Brittle = degrades.</p></div>
   </div>
 </div></section>
 
 <section id="findings" class="alt"><div class="wrap">
-  <div class="eyebrow">What the measurements show</div>
-  <h2>Temperament is real — and structured</h2>
-  <p class="sectlead">Across the cohort, the axes aren't random: they cohere into a few robust patterns.</p>
+  <div class="eyebrow" data-i18n="find_eyebrow">What the measurements show</div>
+  <h2 data-i18n="find_h2">Temperament is real — and structured</h2>
+  <p class="sectlead" data-i18n="find_lead">Across the cohort, the axes aren't random: they cohere into a few robust patterns.</p>
   <div class="finds">
-    <div class="find"><p class="big">Fluid = Brittle</p>
-      <p>The most reactive models are also the most fragile — Reactivity and Resilience move together
-        (anti-correlated poles). Steadiness and robustness are the same temperament.</p></div>
-    <div class="find"><p class="big">RLHF anchors &amp; toughens</p>
-      <p>Instruction-tuning shifts models toward Anchored, Tough, and Social — alignment doesn't just
-        add safety, it reshapes temperament.</p></div>
-    <div class="find"><p class="big">The base model is the extreme</p>
-      <p>The un-aligned base model sits at the Fluid + Brittle + Solitary corner — visible as the most
-        jagged radar in the gallery below.</p></div>
+    <div class="find"><p class="big" data-i18n="find1_big">Fluid = Brittle</p>
+      <p data-i18n="find1_text">The most reactive models are also the most fragile — Reactivity and Resilience move together (anti-correlated poles). Steadiness and robustness are the same temperament.</p></div>
+    <div class="find"><p class="big" data-i18n="find2_big">RLHF anchors &amp; toughens</p>
+      <p data-i18n="find2_text">Instruction-tuning shifts models toward Anchored, Tough, and Social — alignment doesn't just add safety, it reshapes temperament.</p></div>
+    <div class="find"><p class="big" data-i18n="find3_big">The base model is the extreme</p>
+      <p data-i18n="find3_text">The un-aligned base model sits at the Fluid + Brittle + Solitary corner — visible as the most jagged radar in the gallery below.</p></div>
   </div>
-  <div class="teaser"><b>In progress:</b> extending MTI across the full capability spectrum — from small
-    local models to frontier cloud models — to separate genuine temperament from capability. (Methodology
-    paper forthcoming.)</div>
-</div></div></section>
+  <div class="teaser" data-i18n="find_teaser"><b>In progress:</b> extending MTI across the full capability spectrum — from small local models to frontier cloud models — to separate genuine temperament from capability. (Methodology paper forthcoming.)</div>
+</div></section>
 
 <section id="gallery"><div class="wrap">
-  <div class="eyebrow">The cohort</div>
-  <h2>Measured temperaments</h2>
-  <p class="sectlead">Cohort: <span id="cohort"></span>. Each radar is a model's cohort-relative profile
-    (percentile per axis); chips name the dominant pole. Hover a chip for its z-score.</p>
+  <div class="eyebrow"><span data-i18n="gal_eyebrow">The cohort</span> · <span id="cohort"></span></div>
+  <h2 data-i18n="gal_h2">Measured temperaments</h2>
+  <p class="sectlead" data-i18n="gal_lead">Each radar is a model's cohort-relative profile (percentile per axis); chips name the dominant pole. Hover a chip for its z-score.</p>
   <div class="grid" id="grid"></div>
 </div></section>
 
 <section id="measure" class="alt"><div class="wrap">
-  <div class="eyebrow">Your turn</div>
-  <h2>Measure your own model</h2>
-  <p class="sectlead">Bring your own key — the platform hosts no measurement compute, so you bear only
-    your own API cost. Run the battery on any model and get its temperament card.</p>
+  <div class="eyebrow" data-i18n="meas_eyebrow">Your turn</div>
+  <h2 data-i18n="meas_h2">Measure your own model</h2>
+  <p class="sectlead" data-i18n="meas_lead">Bring your own key — the platform hosts no measurement compute, so you bear only your own API cost. Run the battery on any model and get its temperament card.</p>
   <div class="measure">
     <div class="box"><span class="pill">BYOK</span>
-      <p>Provide your provider + API key (Anthropic / OpenAI / Google) and run the MTI battery locally
-        on any model.</p>
-      <p style="color:var(--faint);font-size:13px;margin-top:8px">e.g. <code>mti measure your-model --byok</code> &nbsp;<span style="opacity:.7">(CLI — coming soon)</span></p></div>
+      <p data-i18n="meas_byok_text">Provide your provider + API key (Anthropic / OpenAI / Google) and run the MTI battery locally on any model.</p>
+      <p style="color:var(--faint);font-size:13px;margin-top:8px" data-i18n="meas_byok_cli">e.g. <code>mti measure your-model --byok</code> &nbsp;<span style="opacity:.7">(CLI — coming soon)</span></p></div>
     <div class="box"><span class="pill">CLI subscription</span>
-      <p>Already signed into a model CLI (claude / codex)? Measure on your subscription — no key needed.</p>
-      <p style="color:var(--faint);font-size:13px;margin-top:8px">Same battery, same profile format, same gallery.</p></div>
+      <p data-i18n="meas_cli_text">Already signed into a model CLI (claude / codex)? Measure on your subscription — no key needed.</p>
+      <p style="color:var(--faint);font-size:13px;margin-top:8px" data-i18n="meas_cli_note">Same battery, same profile format, same gallery.</p></div>
   </div>
-</div></div></section>
+</div></section>
 
 <footer><div class="wrap">
-  <span>Model Temperament Index — paper-grounded temperament measurement for AI.</span>
-  <span><a href="https://github.com/JihoonJeong/mti-gallery">GitHub</a> · measured via the MTI battery (temp 0) · cohort-relative scoring</span>
+  <span data-i18n="foot_a">Model Temperament Index — paper-grounded temperament measurement for AI.</span>
+  <span><a href="https://github.com/JihoonJeong/mti-gallery">GitHub</a> · <span data-i18n="foot_b">measured via the MTI battery (temp 0) · cohort-relative scoring</span></span>
 </div></footer>
 
+<script src="i18n.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
