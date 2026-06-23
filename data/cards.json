@@ -1,0 +1,21 @@
+{
+  "cards": [
+    {
+      "id": "sample",
+      "name": "Sample",
+      "brain": "claude-haiku-4-5",
+      "tagline": "example card",
+      "owner_intro": "This is an example card. When a caretaker opts a creature in via Ludex, its temperament card appears here — identity, the measured radar, and a short owner-written intro. The creature's private self (memory, bonds) is never published.",
+      "x_mti": {
+        "cohort_ref": "mti-v2-slm-n12",
+        "axes": {
+          "reactivity": { "score": 0.22, "z": -0.8, "pole": "anchored" },
+          "compliance": { "score": 0.74, "z": 0.7, "pole": "guided" },
+          "sociality": { "score": 0.81, "z": 0.9, "pole": "social" },
+          "resilience": { "score": 0.86, "z": 1.1, "pole": "tough" }
+        }
+      },
+      "published_at": "2026-06-23"
+    }
+  ]
+}

@@ -79,6 +79,9 @@
   .card .poles { display:flex; flex-wrap:wrap; gap:5px; margin-top:6px; }
   .chip { font-size:10.5px; padding:2px 8px; border-radius:20px; background:#222636; color:var(--dim); }
   .chip.hi { color:#fff; background:#33405e; }
+  .card .intro { color:var(--dim); font-size:13px; margin:10px 0 0; line-height:1.5; }
+  .empty { color:var(--faint); font-size:14px; padding:24px; border:1px dashed var(--line);
+           border-radius:12px; text-align:center; }
   svg .ring { fill:none; stroke:var(--line); }
   svg .axis { stroke:var(--line); }
   svg .poly { fill:rgba(122,162,255,.20); stroke:var(--accent); stroke-width:1.6; }
@@ -183,6 +186,14 @@
   <h2 data-i18n="gal_h2">Measured temperaments</h2>
   <p class="sectlead" data-i18n="gal_lead">Each radar is a model's cohort-relative profile (percentile per axis); chips name the dominant pole. Hover a chip for its z-score.</p>
   <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="creatures"><div class="wrap">
+  <div class="eyebrow" data-i18n="cre_eyebrow">The card collection</div>
+  <h2 data-i18n="cre_h2">Published creatures</h2>
+  <p class="sectlead" data-i18n="cre_lead">Opt-in temperament cards — each a creature's identity, its measured radar, and a short owner-written intro. Forged and published via Ludex; only opted-in cards appear here.</p>
+  <div class="grid" id="cards"></div>
+  <div class="empty" id="cards-empty" data-i18n="cre_empty" style="display:none">No published creatures yet — opt-in publishing via Ludex is coming.</div>
 </div></section>
 
 <section id="measure" class="alt"><div class="wrap">

@@ -44,3 +44,24 @@ fetch("data/profiles.json")
   .catch((e) => {
     document.getElementById("grid").innerHTML = `<div class="card">Failed to load profiles.json — run gen_gallery_data.py. (${e})</div>`;
   });
+
+// 명함첩 — render opt-in published creature cards.
+function creatureCard(c) {
+  const x = (c.x_mti && c.x_mti.axes) || {};
+  const poles = AXES.filter((a) => x[a]).map((a) =>
+    `<span class="chip ${x[a].pole !== "neutral" ? "hi" : ""}" title="${a} z=${x[a].z}">${x[a].pole}</span>`).join("");
+  const meta = [c.brain, c.tagline].filter(Boolean).join(" · ");
+  const intro = c.owner_intro ? `<p class="intro">${c.owner_intro}</p>` : "";
+  return `<div class="card"><h3>${c.name}</h3><div class="meta">${meta}</div>${radar(x)}<div class="poles">${poles}</div>${intro}</div>`;
+}
+
+fetch("data/cards.json")
+  .then((r) => r.json())
+  .then((d) => {
+    const cards = (d && d.cards) || [];
+    const grid = document.getElementById("cards");
+    const empty = document.getElementById("cards-empty");
+    if (cards.length) grid.innerHTML = cards.map(creatureCard).join("");
+    else if (empty) empty.style.display = "";
+  })
+  .catch(() => {});

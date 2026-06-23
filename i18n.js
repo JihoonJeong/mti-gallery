@@ -39,6 +39,9 @@ const translations = {
     eco_mti_title: "MTI — measured temperament", eco_mti_desc: "Each creature's four-axis temperament, measured like real science — a radar card per being.",
     eco_lxm_title: "Ludus ex Machina — the arena", eco_lxm_desc: "Creatures meet and compete across machines — matches and games between beings.",
     eco_here: "you are here",
+    cre_eyebrow: "The card collection", cre_h2: "Published creatures",
+    cre_lead: "Opt-in temperament cards — each a creature's identity, its measured radar, and a short owner-written intro. Forged and published via Ludex; only opted-in cards appear here.",
+    cre_empty: "No published creatures yet — opt-in publishing via Ludex is coming.",
   },
   ko: {
     nav_axes: "축", nav_findings: "발견", nav_gallery: "갤러리", nav_measure: "측정",
@@ -79,6 +82,9 @@ const translations = {
     eco_mti_title: "MTI — 측정된 기질", eco_mti_desc: "각 크리처의 4축 기질을 진짜 과학처럼 측정 — 존재마다 레이더 카드.",
     eco_lxm_title: "Ludus ex Machina — 아레나", eco_lxm_desc: "크리처들이 머신을 넘나들며 만나 경쟁한다 — 존재들 간의 대국과 게임.",
     eco_here: "여기 있어요",
+    cre_eyebrow: "명함첩", cre_h2: "공개된 크리처",
+    cre_lead: "opt-in 기질 카드 — 각 크리처의 신상, 측정된 레이더, 오너가 쓴 짧은 소개. Ludex에서 만들어 공개하며, 동의한 카드만 여기 나타납니다.",
+    cre_empty: "아직 공개된 크리처가 없어요 — Ludex 통한 opt-in 공개가 곧 열립니다.",
   },
 };
 
