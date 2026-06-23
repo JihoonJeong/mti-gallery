@@ -33,6 +33,12 @@ const translations = {
     meas_cli_note: "Same battery, same profile format, same gallery.",
     foot_a: "Model Temperament Index — paper-grounded temperament measurement for AI.",
     foot_b: 'measured via the MTI battery (temp 0) · cohort-relative scoring',
+    eco_eyebrow: "One ecosystem, three views", eco_h2: "Three lenses on the same beings",
+    eco_heading: "Creatures are forged and live in Ludex, their temperament is measured by MTI, and they meet and compete in Ludus ex Machina — three lenses on the same beings.",
+    eco_ludex_title: "Ludex — forge &amp; live", eco_ludex_desc: "Assemble creatures from organ blocks and watch their identity, voice, and bonds develop.",
+    eco_mti_title: "MTI — measured temperament", eco_mti_desc: "Each creature's four-axis temperament, measured like real science — a radar card per being.",
+    eco_lxm_title: "Ludus ex Machina — the arena", eco_lxm_desc: "Creatures meet and compete across machines — matches and games between beings.",
+    eco_here: "you are here",
   },
   ko: {
     nav_axes: "축", nav_findings: "발견", nav_gallery: "갤러리", nav_measure: "측정",
@@ -67,6 +73,12 @@ const translations = {
     meas_cli_note: "같은 배터리, 같은 프로파일 포맷, 같은 갤러리.",
     foot_a: "Model Temperament Index — AI를 위한 논문 근거 기질 측정.",
     foot_b: 'MTI 배터리로 측정(temp 0) · 코호트 상대 점수화',
+    eco_eyebrow: "하나의 생태계, 세 가지 시선", eco_h2: "같은 존재를 보는 세 렌즈",
+    eco_heading: "크리처는 Ludex에서 만들어지고 살아가며, 그 기질은 MTI가 측정하고, Ludus ex Machina에서 만나 경쟁한다 — 같은 존재를 보는 세 렌즈.",
+    eco_ludex_title: "Ludex — 만들고 살다", eco_ludex_desc: "장기 블록으로 크리처를 조립하고 정체성·목소리·유대가 자라나는 걸 지켜본다.",
+    eco_mti_title: "MTI — 측정된 기질", eco_mti_desc: "각 크리처의 4축 기질을 진짜 과학처럼 측정 — 존재마다 레이더 카드.",
+    eco_lxm_title: "Ludus ex Machina — 아레나", eco_lxm_desc: "크리처들이 머신을 넘나들며 만나 경쟁한다 — 존재들 간의 대국과 게임.",
+    eco_here: "여기 있어요",
   },
 };
 
