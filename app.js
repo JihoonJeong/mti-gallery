@@ -23,7 +23,7 @@ function radar(axes) {
     dots += `<circle class="dot" cx="${dx}" cy="${dy}" r="2.4"/>`;
   }
   const poly = AXES.map((ax) => pt(ax, axes[ax] ? axes[ax].score : 0, cx, cy, R).join(",")).join(" ");
-  return `<svg viewBox="0 0 ${S} ${S}" width="100%" height="auto" aria-label="temperament radar">${rings}${spokes}<polygon class="poly" points="${poly}"/>${dots}${labels}</svg>`;
+  return `<svg viewBox="0 0 ${S} ${S}" class="radar" aria-label="temperament radar">${rings}${spokes}<polygon class="poly" points="${poly}"/>${dots}${labels}</svg>`;
 }
 
 function card(m) {
