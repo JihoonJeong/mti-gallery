@@ -32,14 +32,24 @@ function card(m) {
     return `<span class="chip ${p !== "neutral" ? "hi" : ""}" title="${ax} z=${m.axes[ax].z}">${p}</span>`;
   }).join("");
   const meta = [m.family, m.size_b ? m.size_b + "B" : "", m.type].filter(Boolean).join(" · ");
-  return `<div class="card"><h3>${m.model}</h3><div class="meta">${meta}</div>${radar(m.axes)}<div class="poles">${poles}</div></div>`;
+  return `<div class="card tier-${m.tier || "SLM"}"><h3>${m.model}</h3><div class="meta">${meta}</div>${radar(m.axes)}<div class="poles">${poles}</div></div>`;
+}
+
+let GALLERY = [];
+function renderGallery(tier) {
+  const ms = tier === "all" ? GALLERY : GALLERY.filter((m) => m.tier === tier);
+  document.getElementById("grid").innerHTML = ms.map(card).join("");
+  document.querySelectorAll(".tier-btn").forEach((b) => b.classList.toggle("active", b.dataset.tier === tier));
 }
 
 fetch("data/profiles.json")
   .then((r) => r.json())
   .then((d) => {
     document.getElementById("cohort").textContent = d.cohort;
-    document.getElementById("grid").innerHTML = d.models.map(card).join("");
+    GALLERY = d.models;
+    renderGallery("all");
+    document.querySelectorAll(".tier-btn").forEach((b) =>
+      b.addEventListener("click", () => renderGallery(b.dataset.tier)));
   })
   .catch((e) => {
     document.getElementById("grid").innerHTML = `<div class="card">Failed to load profiles.json — run gen_gallery_data.py. (${e})</div>`;

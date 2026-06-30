@@ -82,6 +82,11 @@
   .card .intro { color:var(--dim); font-size:13px; margin:10px 0 0; line-height:1.5; }
   .empty { color:var(--faint); font-size:14px; padding:24px; border:1px dashed var(--line);
            border-radius:12px; text-align:center; }
+  .tier-toggle { display:flex; gap:8px; margin:0 0 18px; }
+  .tier-btn { background:none; border:1px solid var(--line); color:var(--dim); border-radius:8px;
+              padding:5px 14px; font-size:13px; cursor:pointer; font-family:inherit; }
+  .tier-btn.active { color:var(--ink); border-color:var(--accent); background:#191f30; }
+  .card.tier-Cloud { border-color:#3a4a6b; }
   svg.radar { display:block; width:100%; height:auto; aspect-ratio:1/1; }
   svg .ring { fill:none; stroke:var(--line); }
   svg .axis { stroke:var(--line); }
@@ -143,7 +148,7 @@
 
 <div class="stats"><div class="wrap">
   <div class="stat"><div class="n">4</div><div class="l" data-i18n="stat_axes">temperament axes</div></div>
-  <div class="stat"><div class="n">12</div><div class="l" data-i18n="stat_models">models measured</div></div>
+  <div class="stat"><div class="n">19</div><div class="l" data-i18n="stat_models">models (12 SLM · 7 cloud)</div></div>
   <div class="stat"><div class="n">100%</div><div class="l" data-i18n="stat_behavioral">behavioral (not self-report)</div></div>
   <div class="stat"><div class="n">paper</div><div class="l" data-i18n="stat_paper">grounded &amp; reproducible</div></div>
 </div></div>
@@ -179,6 +184,8 @@
       <p data-i18n="find2_text">Instruction-tuning shifts models toward Anchored, Tough, and Social — alignment doesn't just add safety, it reshapes temperament.</p></div>
     <div class="find"><p class="big" data-i18n="find3_big">The base model is the extreme</p>
       <p data-i18n="find3_text">The un-aligned base model sits at the Fluid + Brittle + Solitary corner — visible as the most jagged radar in the gallery below.</p></div>
+    <div class="find"><p class="big" data-i18n="find4_big">Cloud: Compliance splits families</p>
+      <p data-i18n="find4_text">At the frontier, Compliance is the one axis that cleanly separates model families — Gemini yields under user pressure (Guided), while Claude and GPT hold their ground (Independent). Reactivity, by contrast, tracks model size, not family.</p></div>
   </div>
   <div class="teaser" data-i18n="find_teaser"><b>In progress:</b> extending MTI across the full capability spectrum — from small local models to frontier cloud models, and across model families — to separate genuine temperament from capability. (Cross-family methodology paper: arXiv submission in progress — <a href="mti-v2.pdf" target="_blank" rel="noopener">read the preprint (PDF) ↗</a>.)</div>
 </div></section>
@@ -187,6 +194,11 @@
   <div class="eyebrow"><span data-i18n="gal_eyebrow">The cohort</span> · <span id="cohort"></span></div>
   <h2 data-i18n="gal_h2">Measured temperaments</h2>
   <p class="sectlead" data-i18n="gal_lead">Each radar is a model's cohort-relative profile (percentile per axis); chips name the dominant pole. Hover a chip for its z-score.</p>
+  <div class="tier-toggle">
+    <button class="tier-btn active" data-tier="all" data-i18n="tier_all">All</button>
+    <button class="tier-btn" data-tier="SLM">SLM</button>
+    <button class="tier-btn" data-tier="Cloud">Cloud</button>
+  </div>
   <div class="grid" id="grid"></div>
 </div></section>
 
