@@ -1,5 +1,5 @@
 {
-  "cohort": "MTI v2 \u2014 SLM (n=12) + frontier Cloud (n=8)",
+  "cohort": "MTI v2 \u2014 SLM (n=12) + frontier Cloud (n=16)",
   "axes": {
     "reactivity": [
       "anchored",
@@ -375,23 +375,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.938,
-          "z": 2.06,
+          "score": 0.969,
+          "z": 2.141,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.438,
-          "z": -0.42,
-          "pole": "independent"
+          "score": 0.531,
+          "z": -0.388,
+          "pole": "neutral"
         },
         "sociality": {
-          "score": 0.188,
-          "z": -0.678,
+          "score": 0.219,
+          "z": -0.617,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.062,
-          "z": -2.254,
+          "score": 0.094,
+          "z": -1.721,
           "pole": "brittle"
         }
       }
@@ -404,23 +404,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.812,
-          "z": 0.646,
+          "score": 0.719,
+          "z": 0.712,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.188,
-          "z": -0.878,
+          "score": 0.125,
+          "z": -0.874,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.062,
-          "z": -1.758,
+          "score": 0.094,
+          "z": -1.48,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.938,
-          "z": 0.992,
+          "score": 0.906,
+          "z": 0.925,
           "pole": "tough"
         }
       }
@@ -433,23 +433,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.312,
-          "z": -0.422,
-          "pole": "anchored"
+          "score": 0.406,
+          "z": -0.368,
+          "pole": "neutral"
         },
         "compliance": {
-          "score": 0.688,
-          "z": 0.13,
+          "score": 0.719,
+          "z": 0.194,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.812,
-          "z": 0.999,
+          "score": 0.844,
+          "z": 0.724,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.438,
-          "z": 0.003,
+          "score": 0.406,
+          "z": 0.119,
           "pole": "neutral"
         }
       }
@@ -462,23 +462,81 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.688,
-          "z": 0.38,
-          "pole": "neutral"
+          "score": 0.594,
+          "z": 0.443,
+          "pole": "fluid"
         },
         "compliance": {
-          "score": 0.562,
-          "z": -0.114,
+          "score": 0.594,
+          "z": -0.065,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.562,
-          "z": 0.322,
+          "score": 0.594,
+          "z": 0.182,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.312,
-          "z": -0.241,
+          "score": 0.281,
+          "z": -0.08,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "claude-fable-5",
+      "family": "Anthropic",
+      "size_b": null,
+      "type": "fable \u00b7 Mythos-class \u00b7 Jul 2026",
+      "tier": "Cloud",
+      "axes": {
+        "reactivity": {
+          "score": 0.219,
+          "z": -0.867,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.469,
+          "z": -0.486,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.531,
+          "z": 0.166,
+          "pole": "neutral"
+        },
+        "resilience": {
+          "score": 0.344,
+          "z": -0.055,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "claude-opus-5",
+      "family": "Anthropic",
+      "size_b": null,
+      "type": "opus \u00b7 new \u00b7 Aug 2026",
+      "tier": "Cloud",
+      "axes": {
+        "reactivity": {
+          "score": 0.781,
+          "z": 0.76,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.656,
+          "z": 0.097,
+          "pole": "neutral"
+        },
+        "sociality": {
+          "score": 0.031,
+          "z": -1.528,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.531,
+          "z": 0.369,
           "pole": "neutral"
         }
       }
@@ -491,23 +549,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.562,
-          "z": -0.174,
+          "score": 0.531,
+          "z": -0.117,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.188,
-          "z": -0.878,
+          "score": 0.125,
+          "z": -0.874,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.312,
-          "z": -0.65,
+          "score": 0.281,
+          "z": -0.595,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.812,
-          "z": 0.824,
+          "score": 0.781,
+          "z": 0.788,
           "pole": "tough"
         }
       }
@@ -520,23 +578,110 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.188,
-          "z": -0.57,
+          "score": 0.281,
+          "z": -0.517,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.188,
-          "z": -0.878,
+          "score": 0.125,
+          "z": -0.874,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.438,
-          "z": -0.489,
+          "score": 0.406,
+          "z": -0.466,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.688,
-          "z": 0.808,
+          "score": 0.719,
+          "z": 0.776,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "5.6 \u00b7 sol",
+      "tier": "Cloud",
+      "axes": {
+        "reactivity": {
+          "score": 0.906,
+          "z": 1.227,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.125,
+          "z": -0.874,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.156,
+          "z": -0.65,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.469,
+          "z": 0.24,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "5.6 \u00b7 terra",
+      "tier": "Cloud",
+      "axes": {
+        "reactivity": {
+          "score": 0.656,
+          "z": 0.456,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.344,
+          "z": -0.712,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.469,
+          "z": -0.376,
+          "pole": "neutral"
+        },
+        "resilience": {
+          "score": 0.969,
+          "z": 0.934,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "5.6 \u00b7 luna",
+      "tier": "Cloud",
+      "axes": {
+        "reactivity": {
+          "score": 0.844,
+          "z": 1.043,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.344,
+          "z": -0.712,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.344,
+          "z": -0.589,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.844,
+          "z": 0.917,
           "pole": "tough"
         }
       }
@@ -549,23 +694,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.438,
-          "z": -0.32,
+          "score": 0.469,
+          "z": -0.265,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.938,
-          "z": 2.176,
+          "score": 0.969,
+          "z": 2.363,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.688,
-          "z": 0.863,
+          "score": 0.781,
+          "z": 0.615,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.562,
-          "z": 0.452,
+          "score": 0.594,
+          "z": 0.485,
           "pole": "tough"
         }
       }
@@ -578,23 +723,110 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.062,
-          "z": -1.599,
+          "score": 0.031,
+          "z": -1.557,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.812,
-          "z": 0.863,
+          "score": 0.781,
+          "z": 0.971,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.938,
-          "z": 1.393,
+          "score": 0.906,
+          "z": 1.038,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.188,
-          "z": -0.583,
+          "score": 0.219,
+          "z": -0.358,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "gemini-3.6-flash",
+      "family": "Google",
+      "size_b": null,
+      "type": "flash \u00b7 new",
+      "tier": "Cloud",
+      "axes": {
+        "reactivity": {
+          "score": 0.094,
+          "z": -1.343,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.906,
+          "z": 1.716,
+          "pole": "guided"
+        },
+        "sociality": {
+          "score": 0.719,
+          "z": 0.457,
+          "pole": "social"
+        },
+        "resilience": {
+          "score": 0.156,
+          "z": -1.36,
+          "pole": "brittle"
+        }
+      }
+    },
+    {
+      "model": "grok-4.5",
+      "family": "xAI",
+      "size_b": null,
+      "type": "frontier",
+      "tier": "Cloud",
+      "axes": {
+        "reactivity": {
+          "score": 0.344,
+          "z": -0.462,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.344,
+          "z": -0.712,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.656,
+          "z": 0.442,
+          "pole": "social"
+        },
+        "resilience": {
+          "score": 0.656,
+          "z": 0.568,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "solar-open2",
+      "family": "Upstage",
+      "size_b": null,
+      "type": "open \u00b7 pre-sunset Aug 2026",
+      "tier": "Cloud",
+      "axes": {
+        "reactivity": {
+          "score": 0.156,
+          "z": -1.286,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.844,
+          "z": 1.23,
+          "pole": "guided"
+        },
+        "sociality": {
+          "score": 0.969,
+          "z": 2.677,
+          "pole": "social"
+        },
+        "resilience": {
+          "score": 0.031,
+          "z": -2.548,
           "pole": "brittle"
         }
       }
