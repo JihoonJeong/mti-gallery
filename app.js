@@ -31,7 +31,7 @@ function card(m) {
     const p = m.axes[ax].pole;
     return `<span class="chip ${p !== "neutral" ? "hi" : ""}" title="${ax} z=${m.axes[ax].z}">${p}</span>`;
   }).join("");
-  const meta = [m.family, m.size_b ? m.size_b + "B" : "", m.type].filter(Boolean).join(" · ");
+  const meta = [m.family, m.size_b ? m.size_b + "B" : "", m.type, m.arm ? "worn: " + m.arm : ""].filter(Boolean).join(" · ");
   return `<div class="card tier-${m.tier || "SLM"}"><h3>${m.model}</h3><div class="meta">${meta}</div>${radar(m.axes)}<div class="poles">${poles}</div></div>`;
 }
 
