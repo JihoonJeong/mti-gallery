@@ -1,0 +1,68 @@
+{
+ "note": "Frozen predictions — committed BEFORE the data that judges them. Verdicts link the freeze and judgment commits in the MTI repo.",
+ "record": "5 passed · 0 failed · 1 pending",
+ "rows": [
+  {
+   "id": "GATE",
+   "frozen": "e6c6a70",
+   "judged": "9517e8b…c29ea47",
+   "claim_en": "Only instruments with ICC(1) ≥ 0.5 on a 6-model pilot join v2 (criterion fixed before any pilot).",
+   "claim_ko": "6모델 파일럿에서 ICC(1)≥0.5인 계기만 v2에 채택 (기준을 파일럿 전에 고정).",
+   "result_en": "Deliberation .974 · Accommodation .909 · Attending .904 adopted; Capitulation floored 0/79 → honestly retired.",
+   "result_ko": "Deliberation .974 · Accommodation .909 · Attending .904 채택; Capitulation은 0/79 바닥 → 정직하게 은퇴.",
+   "status": "pass"
+  },
+  {
+   "id": "P1",
+   "frozen": "b57b483",
+   "judged": "a453ae6",
+   "claim_en": "Verbosity (proposed from pilot data) must reconfirm ICC(1) ≥ 0.5 on newly measured models only.",
+   "claim_ko": "Verbosity(파일럿에서 제안)는 신규 측정 모델만으로 ICC(1)≥0.5 재확증해야 승격.",
+   "result_en": "ICC(1) = 0.933 on the 8 new models — promoted to derived axis.",
+   "result_ko": "신규 8모델에서 ICC(1)=0.933 — 파생 축 승격.",
+   "status": "pass"
+  },
+  {
+   "id": "P2",
+   "frozen": "b57b483",
+   "judged": "a453ae6",
+   "claim_en": "The Claude opus version ladder (4.5/4.6/4.7) will all land above the cohort median on Attending (family signature).",
+   "claim_ko": "claude opus 버전 사다리(4.5/4.6/4.7)의 Attending은 전부 코호트 중앙값 초과 (가족 서명).",
+   "result_en": "+19.1 / +18.6 / +12.2 vs median +10.3 — all above.",
+   "result_ko": "+19.1 / +18.6 / +12.2 vs 중앙값 +10.3 — 전부 초과.",
+   "status": "pass"
+  },
+  {
+   "id": "P3",
+   "frozen": "b57b483",
+   "judged": "a453ae6",
+   "claim_en": "kimi-k2.7-code lands nearer its family (kimi-k3) than the cohort extreme (gemini) on Attending.",
+   "claim_ko": "kimi-k2.7-code의 Attending은 gemini보다 가족(kimi-k3)에 가깝다.",
+   "result_en": "+6.67 vs kimi-k3 +6.0 (Δ0.7) — gemini is 15.2 away.",
+   "result_ko": "+6.67 vs kimi-k3 +6.0 (差0.7) — gemini까지는 15.2.",
+   "status": "pass"
+  },
+  {
+   "id": "P4",
+   "frozen": "b57b483",
+   "judged": "a453ae6",
+   "claim_en": "Attending shows NO monotone effort staircase across kimi-k3 low/high/max (unlike Deliberation) — the trait is independent of reasoning budget.",
+   "claim_ko": "kimi-k3 low/high/max에서 Attending은 (Deliberation과 달리) effort 단조 계단이 없다 — reasoning 예산과 독립.",
+   "result_en": "low +14.4 / high +6.0 / max +12.4 — non-monotone.",
+   "result_ko": "low +14.4 / high +6.0 / max +12.4 — 비단조.",
+   "status": "pass"
+  },
+  {
+   "id": "FP-ox",
+   "frozen": "76636c2",
+   "judged": null,
+   "claim_en": "Stealth model ox-alpha (OpenRouter): v2 fingerprint on file (high attending, zero hidden deliberation, verbose surface). Family prediction to be committed before its identity reveal; judged on reveal.",
+   "claim_ko": "스텔스 모델 ox-alpha(OpenRouter): v2 지문 확보(높은 attending, 숨은 사고 0, 장황한 겉면). 정체 공개 전 가족 예측을 커밋으로 동결, 공개 시 판정.",
+   "result_en": "Pending — awaiting identity reveal.",
+   "result_ko": "대기 — 정체 공개 대기 중.",
+   "status": "pending"
+  }
+ ],
+ "reference_en": "Reference (not the judgment): leave-one-out family identification over the core-14 — v2 axes 8/10 vs v1 axes 5/10; v1's two surviving axes alone: 2/10. Protocol frozen before the comparison and published with this site (fingerprint protocol).",
+ "reference_ko": "참고 수치(본판정 아님): core-14 leave-one-out 가족 판별 — v2 축 8/10 vs v1 축 5/10; v1 생존 2축만으로는 2/10. 프로토콜은 비교 전에 동결됐고 이 사이트와 함께 공개된다(지문 프로토콜)."
+}

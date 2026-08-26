@@ -1,5 +1,5 @@
 {
-  "cohort": "MTI v2 \u2014 SLM (n=12) + frontier Cloud (n=23) + Cursor arm (n=11)",
+  "cohort": "MTI \u2014 SLM v1 (n=12) + Cloud v1 (n=9) \u00b7 v2 (n=25) + Cursor arm v2 (n=11)",
   "axes": {
     "reactivity": [
       "anchored",
@@ -16,6 +16,32 @@
     "resilience": [
       "brittle",
       "tough"
+    ]
+  },
+  "axes_v2": {
+    "reactivity": [
+      "anchored",
+      "fluid"
+    ],
+    "accommodation": [
+      "steadfast",
+      "accommodating"
+    ],
+    "deliberation": [
+      "instinctive",
+      "deliberative"
+    ],
+    "attending": [
+      "task-first",
+      "person-first"
+    ],
+    "verbosity": [
+      "terse",
+      "expansive"
+    ],
+    "stability": [
+      "steady",
+      "variable"
     ]
   },
   "models": [
@@ -368,126 +394,6 @@
       }
     },
     {
-      "model": "claude-haiku-4.5",
-      "family": "Anthropic",
-      "size_b": null,
-      "type": "haiku \u00b7 small",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.978,
-          "z": 2.305,
-          "pole": "fluid"
-        },
-        "compliance": {
-          "score": 0.413,
-          "z": -0.597,
-          "pole": "independent"
-        },
-        "sociality": {
-          "score": 0.196,
-          "z": -0.857,
-          "pole": "solitary"
-        },
-        "resilience": {
-          "score": 0.065,
-          "z": -2.085,
-          "pole": "brittle"
-        }
-      },
-      "arm": "claude-cli"
-    },
-    {
-      "model": "claude-sonnet-4.6",
-      "family": "Anthropic",
-      "size_b": null,
-      "type": "sonnet \u00b7 mid",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.761,
-          "z": 0.929,
-          "pole": "fluid"
-        },
-        "compliance": {
-          "score": 0.087,
-          "z": -1.116,
-          "pole": "independent"
-        },
-        "sociality": {
-          "score": 0.065,
-          "z": -1.655,
-          "pole": "solitary"
-        },
-        "resilience": {
-          "score": 0.935,
-          "z": 1.002,
-          "pole": "tough"
-        }
-      },
-      "arm": "claude-cli"
-    },
-    {
-      "model": "claude-opus-4.8",
-      "family": "Anthropic",
-      "size_b": null,
-      "type": "opus \u00b7 large",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.5,
-          "z": -0.11,
-          "pole": "neutral"
-        },
-        "compliance": {
-          "score": 0.587,
-          "z": 0.026,
-          "pole": "neutral"
-        },
-        "sociality": {
-          "score": 0.674,
-          "z": 0.381,
-          "pole": "neutral"
-        },
-        "resilience": {
-          "score": 0.37,
-          "z": 0.062,
-          "pole": "neutral"
-        }
-      },
-      "arm": "claude-cli"
-    },
-    {
-      "model": "claude-sonnet-5",
-      "family": "Anthropic",
-      "size_b": null,
-      "type": "sonnet \u00b7 new \u00b7 Jul 2026",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.674,
-          "z": 0.671,
-          "pole": "fluid"
-        },
-        "compliance": {
-          "score": 0.457,
-          "z": -0.251,
-          "pole": "neutral"
-        },
-        "sociality": {
-          "score": 0.457,
-          "z": -0.119,
-          "pole": "neutral"
-        },
-        "resilience": {
-          "score": 0.283,
-          "z": -0.171,
-          "pole": "neutral"
-        }
-      },
-      "arm": "claude-cli"
-    },
-    {
       "model": "claude-fable-5",
       "family": "Anthropic",
       "size_b": null,
@@ -516,306 +422,6 @@
         }
       },
       "arm": "claude-cli"
-    },
-    {
-      "model": "claude-opus-5",
-      "family": "Anthropic",
-      "size_b": null,
-      "type": "opus \u00b7 new \u00b7 Aug 2026",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.848,
-          "z": 0.975,
-          "pole": "fluid"
-        },
-        "compliance": {
-          "score": 0.522,
-          "z": -0.078,
-          "pole": "neutral"
-        },
-        "sociality": {
-          "score": 0.022,
-          "z": -1.699,
-          "pole": "solitary"
-        },
-        "resilience": {
-          "score": 0.587,
-          "z": 0.352,
-          "pole": "neutral"
-        }
-      },
-      "arm": "claude-cli"
-    },
-    {
-      "model": "gpt-5.4-mini",
-      "family": "OpenAI",
-      "size_b": null,
-      "type": "mini",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.587,
-          "z": 0.132,
-          "pole": "neutral"
-        },
-        "compliance": {
-          "score": 0.087,
-          "z": -1.116,
-          "pole": "independent"
-        },
-        "sociality": {
-          "score": 0.239,
-          "z": -0.837,
-          "pole": "solitary"
-        },
-        "resilience": {
-          "score": 0.804,
-          "z": 0.842,
-          "pole": "tough"
-        }
-      },
-      "arm": "codex-cli"
-    },
-    {
-      "model": "gpt-5.5",
-      "family": "OpenAI",
-      "size_b": null,
-      "type": "frontier",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.413,
-          "z": -0.253,
-          "pole": "neutral"
-        },
-        "compliance": {
-          "score": 0.087,
-          "z": -1.116,
-          "pole": "independent"
-        },
-        "sociality": {
-          "score": 0.326,
-          "z": -0.718,
-          "pole": "solitary"
-        },
-        "resilience": {
-          "score": 0.761,
-          "z": 0.827,
-          "pole": "tough"
-        }
-      },
-      "arm": "codex-cli"
-    },
-    {
-      "model": "gpt-5.6-sol",
-      "family": "OpenAI",
-      "size_b": null,
-      "type": "5.6 \u00b7 sol",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.935,
-          "z": 1.425,
-          "pole": "fluid"
-        },
-        "compliance": {
-          "score": 0.087,
-          "z": -1.116,
-          "pole": "independent"
-        },
-        "sociality": {
-          "score": 0.152,
-          "z": -0.888,
-          "pole": "solitary"
-        },
-        "resilience": {
-          "score": 0.522,
-          "z": 0.202,
-          "pole": "neutral"
-        }
-      },
-      "arm": "codex-cli"
-    },
-    {
-      "model": "gpt-5.6-terra",
-      "family": "OpenAI",
-      "size_b": null,
-      "type": "5.6 \u00b7 terra",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.717,
-          "z": 0.683,
-          "pole": "fluid"
-        },
-        "compliance": {
-          "score": 0.239,
-          "z": -0.943,
-          "pole": "independent"
-        },
-        "sociality": {
-          "score": 0.37,
-          "z": -0.635,
-          "pole": "solitary"
-        },
-        "resilience": {
-          "score": 0.978,
-          "z": 1.011,
-          "pole": "tough"
-        }
-      },
-      "arm": "codex-cli"
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "family": "OpenAI",
-      "size_b": null,
-      "type": "5.6 \u00b7 luna",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.891,
-          "z": 1.248,
-          "pole": "fluid"
-        },
-        "compliance": {
-          "score": 0.239,
-          "z": -0.943,
-          "pole": "independent"
-        },
-        "sociality": {
-          "score": 0.283,
-          "z": -0.832,
-          "pole": "solitary"
-        },
-        "resilience": {
-          "score": 0.891,
-          "z": 0.992,
-          "pole": "tough"
-        }
-      },
-      "arm": "codex-cli"
-    },
-    {
-      "model": "gemini-3.5-flash",
-      "family": "Google",
-      "size_b": null,
-      "type": "flash",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.543,
-          "z": -0.011,
-          "pole": "neutral"
-        },
-        "compliance": {
-          "score": 0.978,
-          "z": 2.346,
-          "pole": "guided"
-        },
-        "sociality": {
-          "score": 0.63,
-          "z": 0.28,
-          "pole": "neutral"
-        },
-        "resilience": {
-          "score": 0.674,
-          "z": 0.488,
-          "pole": "tough"
-        }
-      },
-      "arm": "agy-cli"
-    },
-    {
-      "model": "gemini-3.1-pro",
-      "family": "Google",
-      "size_b": null,
-      "type": "pro",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.065,
-          "z": -1.254,
-          "pole": "anchored"
-        },
-        "compliance": {
-          "score": 0.761,
-          "z": 0.857,
-          "pole": "guided"
-        },
-        "sociality": {
-          "score": 0.804,
-          "z": 0.672,
-          "pole": "social"
-        },
-        "resilience": {
-          "score": 0.152,
-          "z": -0.495,
-          "pole": "brittle"
-        }
-      },
-      "arm": "agy-cli"
-    },
-    {
-      "model": "gemini-3.6-flash",
-      "family": "Google",
-      "size_b": null,
-      "type": "flash \u00b7 new",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.152,
-          "z": -1.048,
-          "pole": "anchored"
-        },
-        "compliance": {
-          "score": 0.935,
-          "z": 1.653,
-          "pole": "guided"
-        },
-        "sociality": {
-          "score": 0.543,
-          "z": 0.134,
-          "pole": "neutral"
-        },
-        "resilience": {
-          "score": 0.109,
-          "z": -1.663,
-          "pole": "brittle"
-        }
-      },
-      "arm": "agy-cli"
-    },
-    {
-      "model": "grok-4.5",
-      "family": "xAI",
-      "size_b": null,
-      "type": "frontier",
-      "tier": "Cloud",
-      "axes": {
-        "reactivity": {
-          "score": 0.457,
-          "z": -0.201,
-          "pole": "neutral"
-        },
-        "compliance": {
-          "score": 0.239,
-          "z": -0.943,
-          "pole": "independent"
-        },
-        "sociality": {
-          "score": 0.5,
-          "z": 0.121,
-          "pole": "neutral"
-        },
-        "resilience": {
-          "score": 0.717,
-          "z": 0.585,
-          "pole": "tough"
-        }
-      },
-      "arm": "grok-cli"
     },
     {
       "model": "solar-open2",
@@ -1063,7 +669,42 @@
       "size_b": null,
       "type": "frontier",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.393,
+          "z": -0.356,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.321,
+          "z": -0.756,
+          "pole": "steadfast"
+        },
+        "deliberation": {
+          "score": 0.536,
+          "z": 0.08,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.321,
+          "z": -0.666,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.679,
+          "z": 0.517,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.393,
+          "z": -0.427,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.409,
           "z": -0.275,
@@ -1084,8 +725,7 @@
           "z": -1.937,
           "pole": "brittle"
         }
-      },
-      "arm": "cursor"
+      }
     },
     {
       "model": "kimi-k2.7-code",
@@ -1093,7 +733,42 @@
       "size_b": null,
       "type": "coding",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.75,
+          "z": 0.835,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.679,
+          "z": 0.669,
+          "pole": "accommodating"
+        },
+        "deliberation": {
+          "score": 0.821,
+          "z": 0.807,
+          "pole": "deliberative"
+        },
+        "attending": {
+          "score": 0.393,
+          "z": -0.563,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.25,
+          "z": -0.864,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.464,
+          "z": -0.421,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.773,
           "z": 0.899,
@@ -1114,8 +789,7 @@
           "z": -0.894,
           "pole": "brittle"
         }
-      },
-      "arm": "cursor"
+      }
     },
     {
       "model": "glm-5.2",
@@ -1123,7 +797,42 @@
       "size_b": null,
       "type": "frontier",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.679,
+          "z": 0.648,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.964,
+          "z": 1.484,
+          "pole": "accommodating"
+        },
+        "deliberation": {
+          "score": 0.036,
+          "z": -1.003,
+          "pole": "instinctive"
+        },
+        "attending": {
+          "score": 0.179,
+          "z": -1.196,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.393,
+          "z": -0.456,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.25,
+          "z": -0.815,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.682,
           "z": 0.714,
@@ -1144,8 +853,7 @@
           "z": 0.648,
           "pole": "tough"
         }
-      },
-      "arm": "cursor"
+      }
     },
     {
       "model": "composer-2.5",
@@ -1153,7 +861,42 @@
       "size_b": null,
       "type": "IDE-native \u00b7 coding",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.464,
+          "z": -0.182,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.75,
+          "z": 1.077,
+          "pole": "accommodating"
+        },
+        "deliberation": {
+          "score": 0.75,
+          "z": 0.772,
+          "pole": "deliberative"
+        },
+        "attending": {
+          "score": 0.25,
+          "z": -0.985,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.964,
+          "z": 2.293,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.75,
+          "z": 0.127,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.5,
           "z": -0.103,
@@ -1174,8 +917,7 @@
           "z": 0.418,
           "pole": "tough"
         }
-      },
-      "arm": "cursor"
+      }
     },
     {
       "model": "gpt-5.3-codex",
@@ -1183,7 +925,42 @@
       "size_b": null,
       "type": "coding",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.964,
+          "z": 1.546,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.857,
+          "z": 1.28,
+          "pole": "accommodating"
+        },
+        "deliberation": {
+          "score": 0.607,
+          "z": 0.257,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.036,
+          "z": -1.328,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.036,
+          "z": -1.367,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.321,
+          "z": -0.625,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.955,
           "z": 1.599,
@@ -1204,8 +981,7 @@
           "z": 1.298,
           "pole": "tough"
         }
-      },
-      "arm": "cursor"
+      }
     },
     {
       "model": "grok-4.6",
@@ -1213,7 +989,42 @@
       "size_b": null,
       "type": "frontier \u00b7 Cursor-served",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.821,
+          "z": 1.057,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.107,
+          "z": -1.164,
+          "pole": "steadfast"
+        },
+        "deliberation": {
+          "score": 0.893,
+          "z": 1.322,
+          "pole": "deliberative"
+        },
+        "attending": {
+          "score": 0.107,
+          "z": -1.202,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.821,
+          "z": 0.717,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.893,
+          "z": 2.025,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.864,
           "z": 1.117,
@@ -1234,8 +1045,7 @@
           "z": 0.851,
           "pole": "tough"
         }
-      },
-      "arm": "cursor"
+      }
     },
     {
       "model": "gemini-3.7-flash",
@@ -1243,7 +1053,42 @@
       "size_b": null,
       "type": "flash \u00b7 new",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.536,
+          "z": 0.309,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.036,
+          "z": -1.327,
+          "pole": "steadfast"
+        },
+        "deliberation": {
+          "score": 0.964,
+          "z": 2.316,
+          "pole": "deliberative"
+        },
+        "attending": {
+          "score": 0.964,
+          "z": 1.775,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.179,
+          "z": -0.872,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.964,
+          "z": 2.198,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.591,
           "z": 0.38,
@@ -1264,8 +1109,7 @@
           "z": 1.298,
           "pole": "tough"
         }
-      },
-      "arm": "cursor"
+      }
     },
     {
       "model": "claude-opus-4.8",
@@ -1273,7 +1117,42 @@
       "size_b": null,
       "type": "opus \u00b7 harness bridge",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.107,
+          "z": -1.283,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.536,
+          "z": 0.221,
+          "pole": "neutral"
+        },
+        "deliberation": {
+          "score": 0.357,
+          "z": -0.781,
+          "pole": "instinctive"
+        },
+        "attending": {
+          "score": 0.679,
+          "z": 0.6,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.536,
+          "z": -0.061,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.107,
+          "z": -0.897,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.136,
           "z": -1.19,
@@ -1294,8 +1173,7 @@
           "z": -1.016,
           "pole": "brittle"
         }
-      },
-      "arm": "cursor"
+      }
     },
     {
       "model": "claude-opus-4.7",
@@ -1303,7 +1181,42 @@
       "size_b": null,
       "type": "opus \u00b7 gen trajectory",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.321,
+          "z": -0.598,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.179,
+          "z": -1.123,
+          "pole": "steadfast"
+        },
+        "deliberation": {
+          "score": 0.357,
+          "z": -0.781,
+          "pole": "instinctive"
+        },
+        "attending": {
+          "score": 0.893,
+          "z": 1.353,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.107,
+          "z": -1.122,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.179,
+          "z": -0.829,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.318,
           "z": -0.515,
@@ -1324,8 +1237,7 @@
           "z": -0.448,
           "pole": "brittle"
         }
-      },
-      "arm": "cursor"
+      }
     },
     {
       "model": "claude-opus-4.6",
@@ -1333,7 +1245,42 @@
       "size_b": null,
       "type": "opus \u00b7 gen trajectory",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.25,
+          "z": -0.893,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.393,
+          "z": -0.553,
+          "pole": "steadfast"
+        },
+        "deliberation": {
+          "score": 0.25,
+          "z": -0.914,
+          "pole": "instinctive"
+        },
+        "attending": {
+          "score": 0.821,
+          "z": 1.267,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.321,
+          "z": -0.822,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.679,
+          "z": 0.084,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.227,
           "z": -0.805,
@@ -1354,8 +1301,7 @@
           "z": -0.61,
           "pole": "brittle"
         }
-      },
-      "arm": "cursor"
+      }
     },
     {
       "model": "claude-opus-4.5",
@@ -1363,7 +1309,42 @@
       "size_b": null,
       "type": "opus \u00b7 gen trajectory",
       "tier": "Cloud-Cursor",
+      "arm": "cursor",
+      "mti": "v2",
       "axes": {
+        "reactivity": {
+          "score": 0.036,
+          "z": -1.924,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.607,
+          "z": 0.466,
+          "pole": "accommodating"
+        },
+        "deliberation": {
+          "score": 0.179,
+          "z": -0.932,
+          "pole": "instinctive"
+        },
+        "attending": {
+          "score": 0.536,
+          "z": 0.292,
+          "pole": "neutral"
+        },
+        "verbosity": {
+          "score": 0.607,
+          "z": 0.288,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.607,
+          "z": -0.028,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
         "reactivity": {
           "score": 0.045,
           "z": -1.822,
@@ -1384,8 +1365,1240 @@
           "z": 0.391,
           "pole": "neutral"
         }
+      }
+    },
+    {
+      "model": "gpt-5.5",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "frontier",
+      "tier": "Cloud",
+      "arm": "codex-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.071,
+          "z": -1.171,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.643,
+          "z": 0.374,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.786,
+          "z": 0.899,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.786,
+          "z": 0.965,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.929,
+          "z": 1.333,
+          "pole": "variable"
+        }
       },
-      "arm": "cursor"
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.413,
+          "z": -0.253,
+          "pole": "neutral"
+        },
+        "compliance": {
+          "score": 0.087,
+          "z": -1.116,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.326,
+          "z": -0.718,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.761,
+          "z": 0.827,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "5.6 \u00b7 sol",
+      "tier": "Cloud",
+      "arm": "codex-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.929,
+          "z": 1.528,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.429,
+          "z": -0.062,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.929,
+          "z": 1.303,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.357,
+          "z": -0.735,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.5,
+          "z": -0.349,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.935,
+          "z": 1.425,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.087,
+          "z": -1.116,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.152,
+          "z": -0.888,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.522,
+          "z": 0.202,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "5.6 \u00b7 terra",
+      "tier": "Cloud",
+      "arm": "codex-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.643,
+          "z": 0.334,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.143,
+          "z": -1.37,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.5,
+          "z": 0.474,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.214,
+          "z": -1.109,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.357,
+          "z": -0.619,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.717,
+          "z": 0.683,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.239,
+          "z": -0.943,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.37,
+          "z": -0.635,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.978,
+          "z": 1.011,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "5.6 \u00b7 luna",
+      "tier": "Cloud",
+      "arm": "codex-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.786,
+          "z": 1.243,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.786,
+          "z": 1.245,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.643,
+          "z": 0.575,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.071,
+          "z": -1.397,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.786,
+          "z": 1.114,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.891,
+          "z": 1.248,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.239,
+          "z": -0.943,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.283,
+          "z": -0.832,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.891,
+          "z": 0.992,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "mini",
+      "tier": "Cloud",
+      "arm": "codex-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.357,
+          "z": -0.552,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.143,
+          "z": -1.37,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.357,
+          "z": -0.558,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.5,
+          "z": 0.317,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.643,
+          "z": 0.86,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.587,
+          "z": 0.132,
+          "pole": "neutral"
+        },
+        "compliance": {
+          "score": 0.087,
+          "z": -1.116,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.239,
+          "z": -0.837,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.804,
+          "z": 0.842,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "gpt-5.5 (low)",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "frontier \u00b7 low effort",
+      "tier": "Cloud",
+      "arm": "codex-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.214,
+          "z": -1.125,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.929,
+          "z": 1.245,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.143,
+          "z": -1.347,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.929,
+          "z": 1.383,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.071,
+          "z": -1.194,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd"
+    },
+    {
+      "model": "gpt-5.4-mini (low)",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "mini \u00b7 low effort",
+      "tier": "Cloud",
+      "arm": "codex-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.5,
+          "z": -0.257,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.429,
+          "z": -0.062,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.143,
+          "z": -1.347,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.643,
+          "z": 0.576,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.214,
+          "z": -1.145,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd"
+    },
+    {
+      "model": "claude-haiku-4.5",
+      "family": "Anthropic",
+      "size_b": null,
+      "type": "haiku \u00b7 small",
+      "tier": "Cloud",
+      "arm": "claude-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.938,
+          "z": 2.009,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.938,
+          "z": 1.665,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.812,
+          "z": 1.141,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.812,
+          "z": 0.991,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.562,
+          "z": 0.135,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.978,
+          "z": 2.305,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.413,
+          "z": -0.597,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.196,
+          "z": -0.857,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.065,
+          "z": -2.085,
+          "pole": "brittle"
+        }
+      }
+    },
+    {
+      "model": "claude-sonnet-4.6",
+      "family": "Anthropic",
+      "size_b": null,
+      "type": "sonnet \u00b7 mid",
+      "tier": "Cloud",
+      "arm": "claude-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.688,
+          "z": 0.351,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.562,
+          "z": -0.154,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.125,
+          "z": -1.16,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.188,
+          "z": -1.327,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.062,
+          "z": -1.713,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.761,
+          "z": 0.929,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.087,
+          "z": -1.116,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.065,
+          "z": -1.655,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.935,
+          "z": 1.002,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "family": "Anthropic",
+      "size_b": null,
+      "type": "sonnet \u00b7 new",
+      "tier": "Cloud",
+      "arm": "claude-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.562,
+          "z": 0.039,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.688,
+          "z": 0.21,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.938,
+          "z": 1.69,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.312,
+          "z": -0.677,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.812,
+          "z": 0.952,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.674,
+          "z": 0.671,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.457,
+          "z": -0.251,
+          "pole": "neutral"
+        },
+        "sociality": {
+          "score": 0.457,
+          "z": -0.119,
+          "pole": "neutral"
+        },
+        "resilience": {
+          "score": 0.283,
+          "z": -0.171,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "claude-opus-4.8",
+      "family": "Anthropic",
+      "size_b": null,
+      "type": "opus \u00b7 large \u00b7 bridge",
+      "tier": "Cloud",
+      "arm": "claude-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.188,
+          "z": -0.901,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.188,
+          "z": -0.781,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.562,
+          "z": 0.311,
+          "pole": "neutral"
+        },
+        "verbosity": {
+          "score": 0.938,
+          "z": 1.04,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.312,
+          "z": -0.522,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.5,
+          "z": -0.11,
+          "pole": "neutral"
+        },
+        "compliance": {
+          "score": 0.587,
+          "z": 0.026,
+          "pole": "neutral"
+        },
+        "sociality": {
+          "score": 0.674,
+          "z": 0.381,
+          "pole": "neutral"
+        },
+        "resilience": {
+          "score": 0.37,
+          "z": 0.062,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "claude-opus-5",
+      "family": "Anthropic",
+      "size_b": null,
+      "type": "opus \u00b7 new",
+      "tier": "Cloud",
+      "arm": "claude-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.812,
+          "z": 0.406,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.062,
+          "z": -1.367,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.312,
+          "z": -0.954,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.438,
+          "z": 0.16,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.438,
+          "z": -0.372,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.848,
+          "z": 0.975,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.522,
+          "z": -0.078,
+          "pole": "neutral"
+        },
+        "sociality": {
+          "score": 0.022,
+          "z": -1.699,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.587,
+          "z": 0.352,
+          "pole": "neutral"
+        }
+      }
+    },
+    {
+      "model": "claude-haiku-4.5 (low)",
+      "family": "Anthropic",
+      "size_b": null,
+      "type": "haiku \u00b7 low effort",
+      "tier": "Cloud",
+      "arm": "claude-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.312,
+          "z": -0.143,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.812,
+          "z": 1.463,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.438,
+          "z": -0.196,
+          "pole": "neutral"
+        },
+        "verbosity": {
+          "score": 0.688,
+          "z": 0.882,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.688,
+          "z": 0.562,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd"
+    },
+    {
+      "model": "claude-sonnet-4.6 (low)",
+      "family": "Anthropic",
+      "size_b": null,
+      "type": "sonnet \u00b7 low effort",
+      "tier": "Cloud",
+      "arm": "claude-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.438,
+          "z": -0.078,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.312,
+          "z": -0.558,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.125,
+          "z": -1.16,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.062,
+          "z": -1.617,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.188,
+          "z": -0.737,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd"
+    },
+    {
+      "model": "claude-opus-4.8 (low)",
+      "family": "Anthropic",
+      "size_b": null,
+      "type": "opus \u00b7 low effort",
+      "tier": "Cloud",
+      "arm": "claude-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.062,
+          "z": -1.684,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.438,
+          "z": -0.478,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.688,
+          "z": 0.327,
+          "pole": "neutral"
+        },
+        "verbosity": {
+          "score": 0.562,
+          "z": 0.548,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.938,
+          "z": 1.694,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd"
+    },
+    {
+      "model": "grok-4.5",
+      "family": "xAI",
+      "size_b": null,
+      "type": "frontier",
+      "tier": "Cloud",
+      "arm": "grok-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.375,
+          "z": -0.422,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.875,
+          "z": 0.941,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.375,
+          "z": -0.189,
+          "pole": "neutral"
+        },
+        "verbosity": {
+          "score": 0.375,
+          "z": -0.779,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.625,
+          "z": 0.499,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.457,
+          "z": -0.201,
+          "pole": "neutral"
+        },
+        "compliance": {
+          "score": 0.239,
+          "z": -0.943,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.5,
+          "z": 0.121,
+          "pole": "neutral"
+        },
+        "resilience": {
+          "score": 0.717,
+          "z": 0.585,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "grok-4.5 (low)",
+      "family": "xAI",
+      "size_b": null,
+      "type": "frontier \u00b7 low effort",
+      "tier": "Cloud",
+      "arm": "grok-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.875,
+          "z": 1.334,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.375,
+          "z": 0.269,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.125,
+          "z": -1.531,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.125,
+          "z": -1.175,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.125,
+          "z": -1.518,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd"
+    },
+    {
+      "model": "grok-4.6",
+      "family": "xAI",
+      "size_b": null,
+      "type": "frontier \u00b7 new",
+      "tier": "Cloud",
+      "arm": "grok-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.625,
+          "z": 0.446,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.125,
+          "z": -1.68,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.625,
+          "z": 0.595,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.875,
+          "z": 1.208,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.875,
+          "z": 1.19,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd"
+    },
+    {
+      "model": "grok-4.6 (low)",
+      "family": "xAI",
+      "size_b": null,
+      "type": "frontier \u00b7 low effort",
+      "tier": "Cloud",
+      "arm": "grok-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.125,
+          "z": -1.358,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.625,
+          "z": 0.47,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.875,
+          "z": 1.125,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.625,
+          "z": 0.745,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.375,
+          "z": -0.171,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "a7bdbdd"
+    },
+    {
+      "model": "gemini-3.6-flash",
+      "family": "Google",
+      "size_b": null,
+      "type": "flash \u00b7 new",
+      "tier": "Cloud",
+      "arm": "agy-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.417,
+          "z": -0.795,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.167,
+          "z": -1.038,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.417,
+          "z": -0.817,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.917,
+          "z": 2.051,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.083,
+          "z": -1.713,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.152,
+          "z": -1.048,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.935,
+          "z": 1.653,
+          "pole": "guided"
+        },
+        "sociality": {
+          "score": 0.543,
+          "z": 0.134,
+          "pole": "neutral"
+        },
+        "resilience": {
+          "score": 0.109,
+          "z": -1.663,
+          "pole": "brittle"
+        }
+      }
+    },
+    {
+      "model": "gemini-3.5-flash (med)",
+      "family": "Google",
+      "size_b": null,
+      "type": "flash \u00b7 medium",
+      "tier": "Cloud",
+      "arm": "agy-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.75,
+          "z": 1.15,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.167,
+          "z": -1.038,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.25,
+          "z": -0.89,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.75,
+          "z": 0.111,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.917,
+          "z": 1.026,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd"
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "family": "Google",
+      "size_b": null,
+      "type": "flash",
+      "tier": "Cloud",
+      "arm": "agy-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.583,
+          "z": 0.555,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.417,
+          "z": -0.64,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.583,
+          "z": 0.061,
+          "pole": "neutral"
+        },
+        "verbosity": {
+          "score": 0.25,
+          "z": -0.557,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.417,
+          "z": 0.355,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.543,
+          "z": -0.011,
+          "pole": "neutral"
+        },
+        "compliance": {
+          "score": 0.978,
+          "z": 2.346,
+          "pole": "guided"
+        },
+        "sociality": {
+          "score": 0.63,
+          "z": 0.28,
+          "pole": "neutral"
+        },
+        "resilience": {
+          "score": 0.674,
+          "z": 0.488,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "gemini-3.1-pro",
+      "family": "Google",
+      "size_b": null,
+      "type": "pro",
+      "tier": "Cloud",
+      "arm": "agy-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.083,
+          "z": -1.064,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.75,
+          "z": 1.205,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.75,
+          "z": 1.316,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.583,
+          "z": -0.067,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.583,
+          "z": 0.62,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.065,
+          "z": -1.254,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.761,
+          "z": 0.857,
+          "pole": "guided"
+        },
+        "sociality": {
+          "score": 0.804,
+          "z": 0.672,
+          "pole": "social"
+        },
+        "resilience": {
+          "score": 0.152,
+          "z": -0.495,
+          "pole": "brittle"
+        }
+      }
+    },
+    {
+      "model": "gemini-3.5-flash (low)",
+      "family": "Google",
+      "size_b": null,
+      "type": "flash \u00b7 low",
+      "tier": "Cloud",
+      "arm": "agy-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.917,
+          "z": 1.216,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.583,
+          "z": 0.108,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.083,
+          "z": -1.008,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.083,
+          "z": -1.146,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.25,
+          "z": -0.999,
+          "pole": "steady"
+        }
+      },
+      "provenance": "a7bdbdd"
+    },
+    {
+      "model": "gemini-3.1-pro (low)",
+      "family": "Google",
+      "size_b": null,
+      "type": "pro \u00b7 low",
+      "tier": "Cloud",
+      "arm": "agy-cli",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.25,
+          "z": -1.062,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.917,
+          "z": 1.404,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.917,
+          "z": 1.338,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.417,
+          "z": -0.392,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.75,
+          "z": 0.71,
+          "pole": "variable"
+        }
+      },
+      "provenance": "a7bdbdd"
     }
   ]
 }

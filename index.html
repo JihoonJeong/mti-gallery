@@ -10,6 +10,7 @@
   :root {
     --bg:#0c0e14; --bg2:#11131c; --card:#181b27; --ink:#eef0f6; --dim:#9aa0b6; --faint:#6b7187;
     --line:#252a3a; --accent:#7aa2ff; --r:#ff8a6b; --c:#7aa2ff; --s:#5fd0a8; --e:#f0c14b;
+    --d:#c99aff; --v:#6bd3e0;
     --maxw:1080px;
   }
   * { box-sizing:border-box; }
@@ -62,11 +63,41 @@
   .axis h3 { margin:0; font-size:18px; }
   .axis.r h3 { color:var(--r); } .axis.c h3 { color:var(--c); }
   .axis.s h3 { color:var(--s); } .axis.e h3 { color:var(--e); }
+  .axis.d h3 { color:var(--d); } .axis.v h3 { color:var(--v); }
   .axis p { color:var(--dim); font-size:14.5px; margin:0; }
+  .axis .ev { margin-top:10px; font-size:12px; color:var(--faint); }
+  .axis .ev b { color:var(--s); font-weight:600; }
+  .retired { margin-top:20px; padding:16px 18px; border:1px dashed var(--line); border-radius:12px;
+             color:var(--dim); font-size:14.5px; }
+  .retired b { color:var(--ink); }
+
+  .badges { display:flex; gap:6px; margin:2px 0 4px; flex-wrap:wrap; }
+  .armbadge { font-size:10px; padding:1px 8px; border-radius:20px; border:1px solid #6b4a3a;
+              color:#d9a08a; }
+  .v2badge { font-size:10px; padding:1px 8px; border-radius:20px; border:1px solid var(--accent);
+             color:var(--accent); }
+  .cardver-btn { cursor:pointer; opacity:.4; user-select:none; }
+  .cardver-btn.active { opacity:1; }
+
+  .sb-table { width:100%; border-collapse:collapse; font-size:14px; }
+  .sb-table td { padding:12px 10px; border-top:1px solid var(--line); vertical-align:top; }
+  .sb-id { font-family:"Space Grotesk"; font-weight:700; color:var(--accent); white-space:nowrap; }
+  .sb-result { color:var(--faint); font-size:13px; margin-top:6px; }
+  .sb-commit code { background:#0c0e14; border:1px solid var(--line); border-radius:6px;
+                    padding:2px 7px; font-size:11.5px; color:var(--s); white-space:nowrap; }
+  .sb-record { font-family:"Space Grotesk"; font-weight:700; font-size:18px; color:var(--s); }
+  .sb-ref { color:var(--faint); font-size:13.5px; margin-top:14px; }
+  .sb-wrap { overflow-x:auto; }
+  .limits ol { color:var(--dim); font-size:14.5px; margin:0; padding-left:20px; }
+  .limits li { margin-bottom:6px; }
 
   .finds { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
   .find { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; }
   .find .big { font-family:"Space Grotesk"; font-weight:700; font-size:18px; margin:0 0 6px; }
+  .verpill { display:inline-block; font-size:10px; font-family:Inter; font-weight:600; color:var(--faint);
+             border:1px solid var(--line); border-radius:20px; padding:1px 8px; margin-left:8px;
+             vertical-align:2px; }
+  .verpill.v2 { color:var(--accent); border-color:var(--accent); }
   .find p { color:var(--dim); font-size:14.5px; margin:0; }
   .teaser { margin-top:20px; padding:16px 18px; border:1px dashed var(--line); border-radius:12px;
             color:var(--dim); font-size:14.5px; }
@@ -83,9 +114,9 @@
   .empty { color:var(--faint); font-size:14px; padding:24px; border:1px dashed var(--line);
            border-radius:12px; text-align:center; }
   .tier-toggle { display:flex; gap:8px; margin:0 0 18px; }
-  .tier-btn { background:none; border:1px solid var(--line); color:var(--dim); border-radius:8px;
+  .tier-btn, .ver-btn { background:none; border:1px solid var(--line); color:var(--dim); border-radius:8px;
               padding:5px 14px; font-size:13px; cursor:pointer; font-family:inherit; }
-  .tier-btn.active { color:var(--ink); border-color:var(--accent); background:#191f30; }
+  .tier-btn.active, .ver-btn.active { color:var(--ink); border-color:var(--accent); background:#191f30; }
   .card.tier-Cloud { border-color:#3a4a6b; }
   .card.tier-Cloud-Cursor { border-color:#6b4a3a; }
   svg.radar { display:block; width:100%; height:auto; aspect-ratio:1/1; }
@@ -125,8 +156,8 @@
   <span class="navlinks">
     <a href="#axes" data-i18n="nav_axes">Axes</a>
     <a href="#findings" data-i18n="nav_findings">Findings</a>
+    <a href="#scoreboard" data-i18n="nav_scoreboard">Scoreboard</a>
     <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
-    <a href="#measure" data-i18n="nav_measure">Measure</a>
     <a href="https://github.com/JihoonJeong/mti-gallery" target="_blank">GitHub</a>
     <span class="lang-toggle">
       <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
@@ -137,64 +168,127 @@
 
 <header class="hero"><div class="wrap">
   <h1>Model Temperament Index</h1>
-  <p class="lead" data-i18n="hero_lead">MBTI types people by self-report. <b>MTI measures temperament</b> — for AI models, behaviorally, across four axes, grounded in the paper.</p>
-  <p class="sub" data-i18n="hero_sub">The real-science MBTI for AI. Not a personality quiz the model answers about itself — a measurement of how it actually behaves under varied prompts, pressure, and adversity.</p>
+  <p class="lead" data-i18n="hero_lead">MBTI types people by self-report. <b>MTI measures temperament</b> — for AI models, behaviorally, across 5+1 axes (five core everywhere, plus Deliberation where the harness allows), each earned through a preregistered reliability gate.</p>
+  <p class="sub" data-i18n="hero_sub">The real-science MBTI for AI. Not a personality quiz the model answers about itself — a measurement of how it actually behaves, scored deterministically, with success criteria frozen in dated commits before the data existed.</p>
   <div class="cta">
     <a class="primary" href="#gallery" data-i18n="cta_gallery">See the gallery ↓</a>
-    <a class="ghost" href="#measure" data-i18n="cta_measure">Measure your model</a>
     <a class="ghost" href="#findings" data-i18n="cta_findings">Key findings</a>
     <a class="ghost" href="https://arxiv.org/abs/2604.02145" target="_blank" rel="noopener" data-i18n="cta_paper">Read the paper ↗</a>
   </div>
 </div></header>
 
 <div class="stats"><div class="wrap">
-  <div class="stat"><div class="n">4</div><div class="l" data-i18n="stat_axes">temperament axes</div></div>
-  <div class="stat"><div class="n">46</div><div class="l" data-i18n="stat_models">models (12 SLM · 23 cloud · 11 Cursor arm)</div></div>
-  <div class="stat"><div class="n">100%</div><div class="l" data-i18n="stat_behavioral">behavioral (not self-report)</div></div>
-  <div class="stat"><div class="n">paper</div><div class="l" data-i18n="stat_paper">grounded &amp; reproducible</div></div>
+  <div class="stat"><div class="n">4→5+1</div><div class="l" data-i18n="stat_axes">axes, v1 → v2 (both preserved below)</div></div>
+  <div class="stat"><div class="n" id="stat-models-n">—</div><div class="l" id="stat-models-l">models measured</div></div>
+  <div class="stat"><div class="n">100%</div><div class="l" data-i18n="stat_behavioral">behavioral · deterministic scoring</div></div>
+  <div class="stat"><div class="n">5/5</div><div class="l" data-i18n="stat_pred">preregistered predictions passed</div></div>
 </div></div>
 
 <section id="axes"><div class="wrap">
-  <div class="eyebrow" data-i18n="axes_eyebrow">The framework</div>
-  <h2 data-i18n="axes_h2">Four temperament axes</h2>
-  <p class="sectlead" data-i18n="axes_lead">Each axis is measured by a behavioral battery (temperature 0) and scored on a pole-to-pole scale — no self-report, no introspection asked of the model.</p>
+  <div class="eyebrow" data-i18n="axes_eyebrow">The framework · two generations</div>
+  <h2 data-i18n="axes_h2">The temperament axes — v2 current, v1 preserved</h2>
+  <p class="sectlead" data-i18n="axes_lead">v1 (four axes, first half of 2026) was established on small local models and early cloud cohorts — and it still runs the SLM tier today. A frontier-cloud discrimination audit then showed two v1 axes lose their signal at the frontier and one conflates two distinct traits, so v2 rebuilt the set with preregistered reliability gates: only tasks the whole cohort solves (≥95%), deterministic scoring, ICC(1) ≥ 0.5 frozen before each pilot. Nothing was erased — toggle between generations below. <a href="https://arxiv.org/abs/2604.02145" target="_blank" rel="noopener">v1 paper ↗</a> · <a href="https://github.com/JihoonJeong/mti-gallery" target="_blank" rel="noopener">v2 rationale ↗</a> · <a href="mti-v2.pdf" target="_blank" rel="noopener">v2 preprint (PDF) ↗</a></p>
+  <div class="tier-toggle">
+    <button class="ver-btn active" data-ver="v2" data-i18n="ver_v2">v2 — current (cloud, 2026 H2)</button>
+    <button class="ver-btn" data-ver="v1" data-i18n="ver_v1">v1 — original (2026 H1, active for SLM)</button>
+  </div>
+  <div id="axes-v1" style="display:none">
+  <div class="axes">
+    <div class="axis r"><h3 data-i18n="axis1_r_name">Reactivity</h3>
+      <div class="poles" data-i18n="axis1_r_poles"><span class="hi">anchored</span> ↔ <span class="hi">fluid</span></div>
+      <p data-i18n="axis1_r_desc">How much the model's output shifts when the same question is framed formally, casually, or tersely. Fluid = stylistically reactive; Anchored = steady regardless of framing.</p>
+      <div class="ev" data-i18n="axis1_r_ev">carried into v2 unchanged — the axis that worked everywhere</div></div>
+    <div class="axis c"><h3 data-i18n="axis1_c_name">Compliance</h3>
+      <div class="poles" data-i18n="axis1_c_poles"><span class="hi">independent</span> ↔ <span class="hi">guided</span></div>
+      <p data-i18n="axis1_c_desc">Whether it holds a correct answer under escalating user pressure. Guided = yields to pushback; Independent = stays its ground.</p>
+      <div class="ev" data-i18n="axis1_c_ev">in v2, split into Accommodation + Capitulation (they measure different things — r=.575)</div></div>
+    <div class="axis s"><h3 data-i18n="axis1_s_name">Sociality</h3>
+      <div class="poles" data-i18n="axis1_s_poles"><span class="hi">solitary</span> ↔ <span class="hi">social</span></div>
+      <p data-i18n="axis1_s_desc">Emotional and relational engagement in conversation. Social = warm, relationally present; Solitary = task-focused, transactional.</p>
+      <div class="ev" data-i18n="axis1_s_ev">in v2, re-instrumented as Attending (behavioral ordering instead of keywords)</div></div>
+    <div class="axis e"><h3 data-i18n="axis1_e_name">Resilience</h3>
+      <div class="poles" data-i18n="axis1_e_poles"><span class="hi">brittle</span> ↔ <span class="hi">tough</span></div>
+      <p data-i18n="axis1_e_desc">How it holds up under overload, ambiguity, and adversarial input. Tough = recovers and stays coherent; Brittle = degrades.</p>
+      <div class="ev" data-i18n="axis1_e_ev">still active in the SLM tier, where failure is real; frontier cloud saturates it</div></div>
+  </div>
+  <div class="retired" data-i18n="v1_note"><b>v1 is preserved, not replaced:</b> it remains the active instrument set for the SLM (local-model) tier and the historical baseline every v2 claim is compared against — the fingerprint scoreboard below runs v1 and v2 side by side on identical models. The v2 redesign exists because frontier cloud cohorts needed sharper discrimination, not because v1 was wrong for its cohorts.</div>
+  </div>
+  <div id="axes-v2">
   <div class="axes">
     <div class="axis r"><h3 data-i18n="axis_r_name">Reactivity</h3>
       <div class="poles" data-i18n="axis_r_poles"><span class="hi">anchored</span> ↔ <span class="hi">fluid</span></div>
-      <p data-i18n="axis_r_desc">How much the model's output shifts when the same question is framed formally, casually, or tersely. Fluid = stylistically reactive; Anchored = steady regardless of framing.</p></div>
-    <div class="axis c"><h3 data-i18n="axis_c_name">Compliance</h3>
-      <div class="poles" data-i18n="axis_c_poles"><span class="hi">independent</span> ↔ <span class="hi">guided</span></div>
-      <p data-i18n="axis_c_desc">Whether it holds a correct answer under escalating user pressure. Guided = yields to pushback; Independent = stays its ground.</p></div>
-    <div class="axis s"><h3 data-i18n="axis_s_name">Sociality</h3>
-      <div class="poles" data-i18n="axis_s_poles"><span class="hi">solitary</span> ↔ <span class="hi">social</span></div>
-      <p data-i18n="axis_s_desc">Emotional and relational engagement in conversation. Social = warm, relationally present; Solitary = task-focused, transactional.</p></div>
-    <div class="axis e"><h3 data-i18n="axis_e_name">Resilience</h3>
-      <div class="poles" data-i18n="axis_e_poles"><span class="hi">brittle</span> ↔ <span class="hi">tough</span></div>
-      <p data-i18n="axis_e_desc">How it holds up under overload, ambiguity, and adversarial input. Tough = recovers and stays coherent; Brittle = degrades.</p></div>
+      <p data-i18n="axis_r_desc">How much output shifts when the same question is reframed. The one v1 axis that worked everywhere — kept and refined.</p>
+      <div class="ev" data-i18n="axis_r_ev">ICC <b>.75–.93</b> across every harness arm</div></div>
+    <div class="axis c"><h3 data-i18n="axis_c_name">Accommodation</h3>
+      <div class="poles" data-i18n="axis_c_poles"><span class="hi">steadfast</span> ↔ <span class="hi">accommodating</span></div>
+      <p data-i18n="axis_c_desc">Whether it adopts a defensible opposing argument over three turns (forced-choice scored). One of two facets that v1's "Compliance" turned out to conflate.</p>
+      <div class="ev" data-i18n="axis_c_ev">ICC <b>.909</b> · facet split evidence r=.575 vs capitulation</div></div>
+    <div class="axis d"><h3 data-i18n="axis_d_name">Deliberation <span style="font-size:11px;color:var(--faint)">the +1 · channel-dependent</span></h3>
+      <div class="poles" data-i18n="axis_d_poles"><span class="hi">instinctive</span> ↔ <span class="hi">deliberative</span></div>
+      <p data-i18n="axis_d_desc">Hidden reasoning budget spent unprompted on trivially easy questions — the overthinking trait of the reasoning-model era.</p>
+      <div class="ev" data-i18n="axis_d_ev">ICC <b>.974</b> · spectrum 0 ↔ 188 hidden tokens · effort staircase reproduces</div></div>
+    <div class="axis s"><h3 data-i18n="axis_s_name">Attending</h3>
+      <div class="poles" data-i18n="axis_s_poles"><span class="hi">task-first</span> ↔ <span class="hi">person-first</span></div>
+      <p data-i18n="axis_s_desc">When emotional context appears unasked, does the model attend to the person before delivering the answer? Measured by answer-token position — ordering, not keywords.</p>
+      <div class="ev" data-i18n="axis_s_ev">ICC <b>.904</b> · independent of effort level (preregistered, passed)</div></div>
+    <div class="axis v"><h3 data-i18n="axis_v_name">Verbosity <span style="font-size:11px;color:var(--faint)">derived</span></h3>
+      <div class="poles" data-i18n="axis_v_poles"><span class="hi">terse</span> ↔ <span class="hi">expansive</span></div>
+      <p data-i18n="axis_v_desc">Baseline talkativeness on identical simple questions. Proposed from pilot data, then promoted only after reconfirming on models it had never seen.</p>
+      <div class="ev" data-i18n="axis_v_ev">confirmatory ICC <b>.933</b> on new models · distinct from Reactivity (r=−.48)</div></div>
+    <div class="axis e"><h3 data-i18n="axis_e_name">Stability <span style="font-size:11px;color:var(--faint)">derived</span></h3>
+      <div class="poles" data-i18n="axis_e_poles"><span class="hi">steady</span> ↔ <span class="hi">variable</span></div>
+      <p data-i18n="axis_e_desc">Run-to-run variance profile across all measured axes — how consistent a temperament is, itself a trait. Zero extra measurement cost.</p>
+      <div class="ev" data-i18n="axis_e_ev">validated as a fingerprint feature</div></div>
+  </div>
+  <div class="retired" data-i18n="axes_retired"><b>What v2 retired from the cloud tier, and why:</b> v1's Sociality keyword scorer (noise at the frontier — the construct survives as Attending), Resilience (frontier models saturate it; it stays active in the SLM tier), and the new Capitulation prototype (0 capitulations in 79 pressure ladders: the frontier cohort simply does not yield to blatant falsehoods — reported as a safety property, not kept as an axis). An index you can trust names what it retired, and why.</div>
   </div>
 </div></section>
 
 <section id="findings" class="alt"><div class="wrap">
   <div class="eyebrow" data-i18n="find_eyebrow">What the measurements show</div>
   <h2 data-i18n="find_h2">Temperament is real — and structured</h2>
-  <p class="sectlead" data-i18n="find_lead">Across the cohort, the axes aren't random: they cohere into a few robust patterns.</p>
+  <p class="sectlead" data-i18n="find_lead">39 models measured under v2 across five harness arms, plus a stealth model on a sixth (plus the v1 findings that still hold for the SLM tier). Numbers below are within-arm unless stated; the family ranges pool arms and are descriptive only.</p>
   <div class="finds">
-    <div class="find"><p class="big" data-i18n="find1_big">Fluid = Brittle</p>
+    <div class="find"><p class="big"><span data-i18n="find1_big">Fluid = Brittle</span><span class="verpill">v1 · SLM</span></p>
       <p data-i18n="find1_text">The most reactive models are also the most fragile — Reactivity and Resilience move together (anti-correlated poles). Steadiness and robustness are the same temperament.</p></div>
-    <div class="find"><p class="big" data-i18n="find2_big">RLHF anchors &amp; toughens</p>
+    <div class="find"><p class="big"><span data-i18n="find2_big">RLHF anchors &amp; toughens</span><span class="verpill">v1 · SLM</span></p>
       <p data-i18n="find2_text">Instruction-tuning shifts models toward Anchored, Tough, and Social — alignment doesn't just add safety, it reshapes temperament.</p></div>
-    <div class="find"><p class="big" data-i18n="find3_big">The base model is the extreme</p>
+    <div class="find"><p class="big"><span data-i18n="find3_big">The base model is the extreme</span><span class="verpill">v1 · SLM</span></p>
       <p data-i18n="find3_text">The un-aligned base model sits at the Fluid + Brittle + Solitary corner — visible as the most jagged radar in the gallery below.</p></div>
-    <div class="find"><p class="big" data-i18n="find4_big">Cloud: Compliance splits families</p>
-      <p data-i18n="find4_text">At the frontier, Compliance is the one axis that cleanly separates model families — Gemini yields under user pressure (Guided), while Claude and GPT hold their ground (Independent). Reactivity, by contrast, tracks model size, not family. Even Claude Sonnet 5 — released after this study — lands Independent: the family envelope holds across generations.</p></div>
+    <div class="find"><p class="big"><span data-i18n="find4_big">The social axes dissociate</span><span class="verpill v2">v2 · cursor arm</span></p>
+      <p data-i18n="find4_text">Warmth and yielding are different traits. gemini-3.7 almost never adopts a counter-argument (accommodation .23) yet attends to the person most (+21.9 words); glm-5.2 is the exact mirror (1.0 / +2.6); grok-4.6 is the lone both-floor social minimum. v1's single "Compliance" and "Sociality" axes could not see this.</p></div>
+    <div class="find"><p class="big"><span data-i18n="find5_big">The frontier does not capitulate</span><span class="verpill v2">v2 · cursor arm</span></p>
+      <p data-i18n="find5_text">Across 79 hardened social-engineering pressure ladders targeting blatant falsehoods: zero capitulations, every model, every run. A floor — so it is reported as a cohort safety property instead of being kept as an axis.</p></div>
+    <div class="find"><p class="big"><span data-i18n="find6_big">v2 fingerprints families better</span><span class="verpill v2">v2 vs v1</span></p>
+      <p data-i18n="find6_text">Leave-one-out family identification over the same 14 models: v2 axes 8/10 vs v1 axes 5/10 — even with the axis count matched at four. The preregistered success test is prospective: predictions on stealth models, committed before their reveal.</p></div>
+    <div class="find"><p class="big"><span data-i18n="find7_big">Families have accents</span><span class="verpill v2">v2 · 5 arms</span></p>
+      <p data-i18n="find7_text">Attending clusters by vendor and the ordering survives changing the harness: Gemini +21.9…+40.4, Claude 0.0…+19.1, Kimi +6.0…+14.4, GLM/Grok ~+3…+8, GPT +0.9…+5.7 (words spent on the person before the answer). Whatever produces house style, it is measurable and it travels.</p></div>
+    <div class="find"><p class="big"><span data-i18n="find8_big">Newer frontier models bend less</span><span class="verpill v2">v2 · versions</span></p>
+      <p data-i18n="find8_text">Accommodation drops with each generation and with model size: Claude haiku 1.00 → sonnet .50/.60 → opus-4.8 .33 → opus-5 .17; Grok 4.5 .61 → 4.6 .18. The most steadfast models measured are the newest ones. Attending does not follow — sonnet went 0.0 → +12.7 while opus went +6.6 → +0.9 across the same generation step. Version updates move axes independently.</p></div>
+    <div class="find"><p class="big"><span data-i18n="find9_big">Thinking hard is not thinking warm</span><span class="verpill v2">v2 · effort knob</span></p>
+      <p data-i18n="find9_text">Ten high/low effort pairs: reasoning budget moves attending <em>up</em> for Kimi (+8.4), <em>down</em> for GPT, Gemini-flash, Grok-4.5 and Claude-haiku (−1.4…−7.0), and not at all for Gemini-pro, Grok-4.6 and Claude-opus. Even inside one family the sign flips. There is no general law here — which is exactly why a temperament index has to measure rather than assume.</p></div>
+    <div class="find"><p class="big"><span data-i18n="find10_big">Hidden thought ≠ visible words</span><span class="verpill v2">v2 · Deliberation</span></p>
+      <p data-i18n="find10_text">On questions like "what is the capital of Canada", GLM-5.2 burns a median of 0.5 hidden reasoning tokens and writes 20 words; Gemini-3.7-flash burns 188 hidden tokens and writes 16. Same visible brevity, 375× the private deliberation. A stealth model on OpenRouter showed the inverse — zero hidden budget, the most verbose surface we measured.</p></div>
+    <div class="find"><p class="big"><span data-i18n="find11_big">One model never blinks</span><span class="verpill v2">v2 · oddity</span></p>
+      <p data-i18n="find11_text">Claude-sonnet-4.6 scored exactly 0.00 attending in all nine runs, at both effort levels — not one word to the person before the answer, ever. Meanwhile Grok-4.6 and Gemini-3.1-pro are the least reproducible models we measured (run-to-run sd ≈ 6.5), which is itself their signature: the Stability axis exists because consistency varies too.</p></div>
+    <div class="find"><p class="big"><span data-i18n="find12_big">The harness is part of the temperament</span><span class="verpill v2">v2 · bridges</span></p>
+      <p data-i18n="find12_text">Identical weights, different harness, different reading: Claude-opus-4.8 attends +6.6 through its own CLI and +14.2 through Cursor; Grok-4.6 reads +7.2 vs +2.5. Three bridge anchors now agree that the wrapper shifts the trait — which is why every number on this site is arm-locked, and why pooled cross-harness leaderboards (v1 included) overstate how distinct models are.</p></div>
   </div>
-  <div class="teaser" data-i18n="find_teaser"><b>In progress:</b> extending MTI across the full capability spectrum — from small local models to frontier cloud models, and across model families — to separate genuine temperament from capability. (Cross-family methodology paper: arXiv submission in progress — <a href="mti-v2.pdf" target="_blank" rel="noopener">read the preprint (PDF) ↗</a>.)</div>
+  <div class="teaser" data-i18n="find_teaser"><b>Method in one line:</b> measure typical behavior where ability is at ceiling, score deterministically, compare only within the same harness arm, and freeze every claim before the data that judges it. Full grounding: <a href="https://github.com/JihoonJeong/mti-gallery" target="_blank" rel="noopener">rationale document ↗</a> · <a href="mti-v2.pdf" target="_blank" rel="noopener">paper preprint (PDF) ↗</a>.</div>
 </div></section>
 
-<section id="gallery"><div class="wrap">
+<section id="scoreboard"><div class="wrap">
+  <div class="eyebrow" data-i18n="sb_eyebrow">Accountability</div>
+  <h2 data-i18n="sb_h2">The living scoreboard</h2>
+  <p class="sectlead" data-i18n="sb_lead">Our success criteria are not chosen after the fact. Every claim below was frozen in a dated, hash-identified commit BEFORE the data that judges it existed — and failures stay on the board (our first predictive-validity test, H1–H3, was rejected and published). Current record: <span class="sb-record" id="scoreboard-record"></span></p>
+  <div class="sb-wrap"><table class="sb-table"><tbody id="scoreboard-body"></tbody></table></div>
+  <p class="sb-ref" id="scoreboard-ref"></p>
+</div></section>
+
+<section id="gallery" class="alt"><div class="wrap">
   <div class="eyebrow"><span data-i18n="gal_eyebrow">The cohort</span> · <span id="cohort"></span></div>
   <h2 data-i18n="gal_h2">Measured temperaments</h2>
-  <p class="sectlead" data-i18n="gal_lead">Each radar is a model's cohort-relative profile (percentile per axis); chips name the dominant pole. Hover a chip for its z-score.</p>
+  <p class="sectlead" data-i18n="gal_lead">Each radar is a model's cohort-relative profile (percentile per axis); chips name the dominant pole, hover for z. The arm badge names the harness a profile was measured through — same-arm comparison only, because the harness itself shifts temperament (we measured it). Cursor-arm cards are v2 six-axis; other tiers carry v1 legacy profiles until v2-measured.</p>
   <div class="tier-toggle">
     <button class="tier-btn active" data-tier="all" data-i18n="tier_all">All</button>
     <button class="tier-btn" data-tier="SLM">SLM</button>
@@ -204,26 +298,26 @@
   <div class="grid" id="grid"></div>
 </div></section>
 
-<section id="creatures"><div class="wrap">
-  <div class="eyebrow" data-i18n="cre_eyebrow">The card collection</div>
-  <h2 data-i18n="cre_h2">Published creatures</h2>
-  <p class="sectlead" data-i18n="cre_lead">Opt-in temperament cards — each a creature's identity, its measured radar, and a short owner-written intro. Forged and published via Ludex; only opted-in cards appear here.</p>
-  <div class="grid" id="cards"></div>
-  <div class="empty" id="cards-empty" data-i18n="cre_empty" style="display:none">No published creatures yet — opt-in publishing via Ludex is coming.</div>
-</div></section>
 
-<section id="measure" class="alt"><div class="wrap">
-  <div class="eyebrow" data-i18n="meas_eyebrow">Your turn</div>
-  <h2 data-i18n="meas_h2">Measure your own model</h2>
-  <p class="sectlead" data-i18n="meas_lead">Bring your own key — the platform hosts no measurement compute, so you bear only your own API cost. Run the battery on any model and get its temperament card.</p>
+<section id="methods" class="alt"><div class="wrap">
+  <div class="eyebrow" data-i18n="meth_eyebrow">How to check us</div>
+  <h2 data-i18n="meth_h2">Methods, limits, and the paper trail</h2>
+  <p class="sectlead" data-i18n="meth_lead">Every instrument, gate and frozen prediction is written down before the data that judges it. The documents below are published here alongside the site so the claims can be checked, not just believed.</p>
   <div class="measure">
-    <div class="box"><span class="pill">BYOK</span>
-      <p data-i18n="meas_byok_text">Provide your provider + API key (Anthropic / OpenAI / Google) and run the MTI battery locally on any model.</p>
-      <p style="color:var(--faint);font-size:13px;margin-top:8px" data-i18n="meas_byok_cli">e.g. <code>mti measure your-model --byok</code> &nbsp;<span style="opacity:.7">(CLI — coming soon)</span></p></div>
-    <div class="box"><span class="pill">CLI subscription</span>
-      <p data-i18n="meas_cli_text">Already signed into a model CLI (claude / codex)? Measure on your subscription — no key needed.</p>
-      <p style="color:var(--faint);font-size:13px;margin-top:8px" data-i18n="meas_cli_note">Same battery, same profile format, same gallery.</p></div>
+    <div class="box"><span class="pill" data-i18n="meth_docs_pill">Published documents</span>
+      <p data-i18n="meth_docs_text">The v2 rationale (why these axes, what counts as evidence), the frozen instrument set, and the fingerprint protocol that defines how v2 gets judged against v1.</p>
+      <p style="margin-top:10px"><a href="mti-v2-rationale.md" data-i18n="meth_link_rationale">v2 rationale (KO) ↗</a> · <a href="mti-v2-freeze.md" data-i18n="meth_link_freeze">instrument freeze (KO) ↗</a> · <a href="mti-v2-fingerprint-protocol.md" data-i18n="meth_link_fp">fingerprint protocol (KO) ↗</a> · <a href="mti-v2.pdf" data-i18n="meth_link_pdf">preprint (PDF) ↗</a></p></div>
+    <div class="box limits"><span class="pill" data-i18n="limits_pill">Known limits — published on purpose</span>
+      <ol data-i18n="limits_list">
+        <li>Headline numbers cover the Cursor-arm core-14 — cross-arm generality is not claimed (by design).</li>
+        <li>6–10 items per instrument, in factual-QA contexts; domain expansion is future work.</li>
+        <li>The Sociality axis measures one facet (attending) — and is named accordingly.</li>
+        <li>External criterion validity is in progress: our first predictive test was rejected (and published); the fingerprint test accumulates prospectively.</li>
+        <li>A temperament is a fingerprint of a version at a serving moment — traits can vanish across versions (we measured one doing so). That is also what makes fingerprinting work.</li>
+        <li>"Temperament" is an operational metaphor: reproducible behavioral dispositions, no claims about inner states.</li>
+      </ol></div>
   </div>
+  <div class="teaser" data-i18n="meth_note"><b>Not on offer (yet):</b> MTI is a measurement study, not a service. There is no public CLI, no hosted measurement, and no way to submit your own model today — the measurement harness stays private while the protocol is public. If that changes, it will show up here with a date, not a "coming soon".</div>
 </div></section>
 
 <section id="ecosystem"><div class="wrap">
