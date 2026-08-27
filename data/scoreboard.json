@@ -1,6 +1,6 @@
 {
  "note": "Frozen predictions — committed BEFORE the data that judges them. Verdicts link the freeze and judgment commits in the MTI repo.",
- "record": "5 passed · 0 failed · 1 pending",
+ "record": "5 passed · 1 failed · 1 void",
  "rows": [
   {
    "id": "GATE",
@@ -55,12 +55,22 @@
   {
    "id": "FP-ox",
    "frozen": "76636c2",
-   "judged": null,
-   "claim_en": "Stealth model ox-alpha (OpenRouter): v2 fingerprint on file (high attending, zero hidden deliberation, verbose surface). Family prediction to be committed before its identity reveal; judged on reveal.",
-   "claim_ko": "스텔스 모델 ox-alpha(OpenRouter): v2 지문 확보(높은 attending, 숨은 사고 0, 장황한 겉면). 정체 공개 전 가족 예측을 커밋으로 동결, 공개 시 판정.",
-   "result_en": "Pending — awaiting identity reveal.",
-   "result_ko": "대기 — 정체 공개 대기 중.",
-   "status": "pending"
+   "judged": "—",
+   "claim_en": "Stealth model ox-alpha (OpenRouter): fingerprint on file; a family prediction was to be committed BEFORE its identity was revealed.",
+   "claim_ko": "스텔스 모델 ox-alpha(OpenRouter): 지문 확보; 가족 예측을 정체 공개 전에 커밋으로 동결하기로 했었다.",
+   "result_en": "VOID — we never committed the prediction. The identity surfaced (reported as GLM 5.3 Flash) while the row still said “to be committed”, so this scores as neither pass nor fail. Replaying the protocol after the fact points at composer/kimi, not glm: we would likely have lost the bet.",
+   "result_ko": "무효 — 예측을 끝내 커밋하지 않았다. 행에 “동결 예정”이라고 적힌 채로 정체가 공개(GLM 5.3 Flash로 보고)돼 통과도 실패도 아니다. 사후에 프로토콜을 돌려보면 composer/kimi를 가리킨다 — 걸었다면 졌을 가능성이 높다.",
+   "status": "void"
+  },
+  {
+   "id": "FP-glm53",
+   "frozen": "ea72aa9",
+   "judged": "(this commit)",
+   "claim_en": "If ox-alpha is GLM 5.3 Flash, then measuring z-ai/glm-5.3-flash on the same arm must reproduce the fingerprint: attending +8..+18, hidden-reasoning median 0, verbosity 50-75. A non-zero hidden budget fails immediately.",
+   "claim_ko": "ox-alpha가 GLM 5.3 Flash라면 동일 arm 측정에서 지문이 재현되어야 한다: attending +8~+18, 숨은 추론 중앙값 0, verbosity 50~75. 숨은 추론이 0이 아니면 즉시 실패.",
+   "result_en": "FAIL. Attending +11.25 and verbosity 51 both land in band, but hidden reasoning is 205 (74% of output) against ox-alpha's measured, reported zero. The rule was written that way, so it applies that way — though the shape of the failure (two weight-like axes match, the config-like axis does not) is itself the finding.",
+   "result_ko": "실패. Attending +11.25, verbosity 51은 구간 안이지만 숨은 추론이 205(출력의 74%)로, 실측·보고된 ox-alpha의 0과 정면 충돌. 규칙대로 판정한다 — 다만 실패의 모양(가중치성 축 2개는 일치, 설정성 축만 어긋남)이 그 자체로 발견이다.",
+   "status": "fail"
   }
  ],
  "reference_en": "Reference (not the judgment): leave-one-out family identification over the core-14 — v2 axes 8/10 vs v1 axes 5/10; v1's two surviving axes alone: 2/10. Protocol frozen before the comparison and published with this site (fingerprint protocol).",

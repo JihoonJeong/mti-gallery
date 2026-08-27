@@ -121,7 +121,7 @@ let SCOREBOARD = null;
 function renderScoreboard() {
   if (!SCOREBOARD) return;
   const lang = (document.documentElement.lang === "ko") ? "ko" : "en";
-  const icon = { pass: "✅", fail: "❌", pending: "⏳" };
+  const icon = { pass: "✅", fail: "❌", pending: "⏳", void: "⊘" };
   const rows = SCOREBOARD.rows.map((r) => {
     const commits = r.frozen + (r.judged ? ` → ${r.judged}` : "");
     return `<tr class="sb-${r.status}"><td class="sb-id">${r.id}</td>` +
@@ -130,6 +130,13 @@ function renderScoreboard() {
   }).join("");
   document.getElementById("scoreboard-body").innerHTML = rows;
   document.getElementById("scoreboard-record").textContent = SCOREBOARD.record;
+  // hero stat derives from the same file, so it cannot drift from the board
+  const passed = SCOREBOARD.rows.filter((r) => r.status === "pass").length;
+  const judged = SCOREBOARD.rows.filter((r) => r.status === "pass" || r.status === "fail").length;
+  const n = document.getElementById("stat-pred-n");
+  const l = document.getElementById("stat-pred-l");
+  if (n) n.textContent = `${passed}/${judged}`;
+  if (l) l.textContent = lang === "ko" ? "판정된 사전등록 예측 중 통과" : "of judged preregistered predictions passed";
   document.getElementById("scoreboard-ref").textContent = SCOREBOARD["reference_" + lang];
 }
 
