@@ -1,5 +1,5 @@
 {
-  "cohort": "MTI \u2014 SLM v1 (n=12) + Cloud v1 (n=9) \u00b7 v2 (n=26) + Cursor arm v2 (n=11)",
+  "cohort": "MTI \u2014 SLM v1 (n=12) + Cloud v1 (n=9) \u00b7 v2 (n=27) + Cursor arm v2 (n=11)",
   "axes": {
     "reactivity": [
       "anchored",
@@ -401,23 +401,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.354,
-          "z": -0.573,
+          "score": 0.34,
+          "z": -0.617,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.354,
-          "z": -0.732,
+          "score": 0.34,
+          "z": -0.747,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.438,
-          "z": -0.131,
+          "score": 0.46,
+          "z": -0.116,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.354,
-          "z": -0.09,
+          "score": 0.34,
+          "z": -0.118,
           "pole": "neutral"
         }
       },
@@ -431,23 +431,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.188,
-          "z": -0.982,
+          "score": 0.18,
+          "z": -1.022,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.833,
-          "z": 0.935,
+          "score": 0.84,
+          "z": 0.954,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.979,
-          "z": 2.237,
+          "score": 0.98,
+          "z": 2.293,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.021,
-          "z": -2.971,
+          "score": 0.02,
+          "z": -3.032,
           "pole": "brittle"
         }
       },
@@ -461,23 +461,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.229,
-          "z": -0.862,
+          "score": 0.22,
+          "z": -0.903,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.833,
-          "z": 0.935,
+          "score": 0.84,
+          "z": 0.954,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.854,
-          "z": 1.256,
+          "score": 0.86,
+          "z": 1.295,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.229,
-          "z": -0.234,
+          "score": 0.22,
+          "z": -0.264,
           "pole": "neutral"
         }
       },
@@ -491,23 +491,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.646,
-          "z": 0.204,
+          "score": 0.62,
+          "z": 0.154,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.771,
-          "z": 0.708,
+          "score": 0.78,
+          "z": 0.723,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.771,
-          "z": 0.643,
+          "score": 0.78,
+          "z": 0.672,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.438,
-          "z": 0.136,
+          "score": 0.42,
+          "z": 0.11,
           "pole": "neutral"
         }
       },
@@ -521,23 +521,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.021,
-          "z": -1.793,
+          "score": 0.02,
+          "z": -1.825,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.688,
-          "z": 0.594,
+          "score": 0.7,
+          "z": 0.607,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.604,
-          "z": 0.291,
+          "score": 0.62,
+          "z": 0.313,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.646,
-          "z": 0.429,
+          "score": 0.62,
+          "z": 0.407,
           "pole": "tough"
         }
       },
@@ -551,23 +551,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.271,
-          "z": -0.802,
+          "score": 0.26,
+          "z": -0.844,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.5,
-          "z": -0.166,
+          "score": 0.48,
+          "z": -0.169,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.896,
-          "z": 1.518,
+          "score": 0.9,
+          "z": 1.562,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.271,
-          "z": -0.147,
+          "score": 0.26,
+          "z": -0.176,
           "pole": "neutral"
         }
       },
@@ -581,23 +581,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.812,
-          "z": 0.99,
+          "score": 0.78,
+          "z": 0.932,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.604,
-          "z": 0.306,
+          "score": 0.62,
+          "z": 0.312,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.938,
-          "z": 1.617,
+          "score": 0.94,
+          "z": 1.662,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.542,
-          "z": 0.251,
+          "score": 0.52,
+          "z": 0.227,
           "pole": "neutral"
         }
       },
@@ -611,23 +611,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.396,
-          "z": -0.285,
+          "score": 0.38,
+          "z": -0.331,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.646,
-          "z": 0.533,
+          "score": 0.66,
+          "z": 0.544,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.729,
-          "z": 0.501,
+          "score": 0.74,
+          "z": 0.527,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.479,
-          "z": 0.213,
+          "score": 0.46,
+          "z": 0.188,
           "pole": "neutral"
         }
       },
@@ -641,23 +641,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.104,
-          "z": -1.241,
+          "score": 0.1,
+          "z": -1.278,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.312,
-          "z": -0.935,
+          "score": 0.3,
+          "z": -0.954,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.104,
+          "score": 0.1,
           "z": -1.085,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.854,
-          "z": 0.938,
+          "score": 0.86,
+          "z": 0.921,
           "pole": "tough"
         }
       },
@@ -703,7 +703,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.409,
@@ -767,7 +767,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.773,
@@ -831,7 +831,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.682,
@@ -895,7 +895,7 @@
           "pole": "neutral"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.5,
@@ -959,7 +959,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.955,
@@ -1023,7 +1023,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.864,
@@ -1087,7 +1087,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.591,
@@ -1151,7 +1151,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.136,
@@ -1215,7 +1215,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.318,
@@ -1279,7 +1279,7 @@
           "pole": "neutral"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.227,
@@ -1343,7 +1343,7 @@
           "pole": "neutral"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
           "score": 0.045,
@@ -1402,26 +1402,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.438,
-          "z": -0.232,
+          "score": 0.42,
+          "z": -0.279,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.083,
-          "z": -1.109,
+          "score": 0.08,
+          "z": -1.132,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.312,
-          "z": -0.727,
+          "score": 0.3,
+          "z": -0.721,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.771,
-          "z": 0.87,
+          "score": 0.78,
+          "z": 0.853,
           "pole": "tough"
         }
       }
@@ -1461,26 +1461,26 @@
           "pole": "neutral"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.938,
-          "z": 1.47,
+          "score": 0.94,
+          "z": 1.408,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.083,
-          "z": -1.109,
+          "score": 0.08,
+          "z": -1.132,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.146,
-          "z": -0.901,
+          "score": 0.14,
+          "z": -0.898,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.542,
-          "z": 0.251,
+          "score": 0.52,
+          "z": 0.227,
           "pole": "neutral"
         }
       }
@@ -1520,26 +1520,26 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.729,
-          "z": 0.718,
+          "score": 0.7,
+          "z": 0.662,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.229,
-          "z": -0.952,
+          "score": 0.22,
+          "z": -0.972,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.354,
-          "z": -0.642,
+          "score": 0.34,
+          "z": -0.635,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.979,
-          "z": 1.053,
+          "score": 0.98,
+          "z": 1.038,
           "pole": "tough"
         }
       }
@@ -1579,26 +1579,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.896,
-          "z": 1.29,
+          "score": 0.9,
+          "z": 1.23,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.229,
-          "z": -0.952,
+          "score": 0.22,
+          "z": -0.972,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.271,
-          "z": -0.843,
+          "score": 0.26,
+          "z": -0.84,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.896,
-          "z": 1.034,
+          "score": 0.9,
+          "z": 1.019,
           "pole": "tough"
         }
       }
@@ -1638,26 +1638,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.604,
-          "z": 0.159,
+          "score": 0.58,
+          "z": 0.108,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.083,
-          "z": -1.109,
+          "score": 0.08,
+          "z": -1.132,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.229,
-          "z": -0.848,
+          "score": 0.22,
+          "z": -0.845,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.812,
-          "z": 0.885,
+          "score": 0.82,
+          "z": 0.868,
           "pole": "tough"
         }
       }
@@ -1697,7 +1697,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "gpt-5.4-mini (low)",
@@ -1734,7 +1734,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "claude-haiku-4.5",
@@ -1771,26 +1771,26 @@
           "pole": "neutral"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.979,
-          "z": 2.362,
+          "score": 0.98,
+          "z": 2.292,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.396,
-          "z": -0.638,
+          "score": 0.38,
+          "z": -0.651,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.188,
-          "z": -0.869,
+          "score": 0.18,
+          "z": -0.866,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.062,
-          "z": -2.015,
+          "score": 0.06,
+          "z": -2.066,
           "pole": "brittle"
         }
       }
@@ -1830,26 +1830,26 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.771,
-          "z": 0.967,
+          "score": 0.74,
+          "z": 0.909,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.083,
-          "z": -1.109,
+          "score": 0.08,
+          "z": -1.132,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.062,
-          "z": -1.684,
+          "score": 0.06,
+          "z": -1.694,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.938,
-          "z": 1.043,
+          "score": 0.94,
+          "z": 1.028,
           "pole": "tough"
         }
       }
@@ -1889,26 +1889,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.688,
-          "z": 0.705,
+          "score": 0.66,
+          "z": 0.65,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.438,
-          "z": -0.323,
+          "score": 0.42,
+          "z": -0.329,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.479,
-          "z": -0.116,
+          "score": 0.5,
+          "z": -0.1,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.312,
-          "z": -0.119,
+          "score": 0.3,
+          "z": -0.147,
           "pole": "neutral"
         }
       }
@@ -1948,26 +1948,26 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.521,
-          "z": -0.086,
+          "score": 0.5,
+          "z": -0.134,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.562,
-          "z": -0.072,
+          "score": 0.54,
+          "z": -0.073,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.688,
-          "z": 0.395,
-          "pole": "neutral"
+          "score": 0.7,
+          "z": 0.419,
+          "pole": "social"
         },
         "resilience": {
-          "score": 0.396,
-          "z": 0.112,
+          "score": 0.38,
+          "z": 0.086,
           "pole": "neutral"
         }
       }
@@ -2007,26 +2007,26 @@
           "pole": "neutral"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.854,
-          "z": 1.014,
+          "score": 0.82,
+          "z": 0.956,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.5,
-          "z": -0.166,
+          "score": 0.48,
+          "z": -0.169,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.021,
-          "z": -1.729,
+          "score": 0.02,
+          "z": -1.74,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.604,
-          "z": 0.4,
+          "score": 0.58,
+          "z": 0.377,
           "pole": "neutral"
         }
       }
@@ -2066,7 +2066,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "claude-sonnet-4.6 (low)",
@@ -2103,7 +2103,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "claude-opus-4.8 (low)",
@@ -2140,7 +2140,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "grok-4.5",
@@ -2177,26 +2177,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.479,
-          "z": -0.178,
+          "score": 0.46,
+          "z": -0.226,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.229,
-          "z": -0.952,
+          "score": 0.22,
+          "z": -0.972,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.521,
-          "z": 0.129,
+          "score": 0.54,
+          "z": 0.149,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.729,
-          "z": 0.63,
+          "score": 0.7,
+          "z": 0.611,
           "pole": "tough"
         }
       }
@@ -2236,7 +2236,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "grok-4.6",
@@ -2273,7 +2273,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "grok-4.6 (low)",
@@ -2310,7 +2310,7 @@
           "pole": "neutral"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "gemini-3.6-flash",
@@ -2347,26 +2347,26 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.146,
-          "z": -1.038,
+          "score": 0.14,
+          "z": -1.077,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.896,
-          "z": 1.406,
+          "score": 0.9,
+          "z": 1.436,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.562,
-          "z": 0.143,
+          "score": 0.58,
+          "z": 0.163,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.104,
-          "z": -1.597,
+          "score": 0.1,
+          "z": -1.643,
           "pole": "brittle"
         }
       }
@@ -2406,7 +2406,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "gemini-3.5-flash",
@@ -2443,26 +2443,26 @@
           "pole": "neutral"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.562,
-          "z": 0.014,
+          "score": 0.54,
+          "z": -0.035,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.938,
-          "z": 2.036,
+          "score": 0.94,
+          "z": 2.078,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.646,
-          "z": 0.292,
+          "score": 0.66,
+          "z": 0.315,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.688,
-          "z": 0.534,
+          "score": 0.66,
+          "z": 0.513,
           "pole": "tough"
         }
       }
@@ -2502,26 +2502,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.062,
-          "z": -1.247,
+          "score": 0.06,
+          "z": -1.285,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.729,
-          "z": 0.683,
+          "score": 0.74,
+          "z": 0.698,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.812,
-          "z": 0.692,
+          "score": 0.82,
+          "z": 0.721,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.188,
-          "z": -0.44,
+          "score": 0.18,
+          "z": -0.472,
           "pole": "brittle"
         }
       }
@@ -2561,7 +2561,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "gemini-3.1-pro (low)",
@@ -2598,7 +2598,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "22a6241"
+      "provenance": "01d4160"
     },
     {
       "model": "solar-mini4-preview",
@@ -2643,27 +2643,88 @@
           "unit": "hidden tokens, median"
         }
       },
-      "provenance": "22a6241",
+      "provenance": "01d4160",
       "axes_v1": {
         "reactivity": {
-          "score": 0.312,
-          "z": -0.575,
+          "score": 0.3,
+          "z": -0.619,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.979,
-          "z": 2.193,
+          "score": 0.98,
+          "z": 2.238,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.396,
-          "z": -0.142,
+          "score": 0.42,
+          "z": -0.126,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.146,
-          "z": -1.165,
+          "score": 0.14,
+          "z": -1.206,
           "pole": "brittle"
+        }
+      }
+    },
+    {
+      "model": "muse-spark-1.3",
+      "family": "Meta",
+      "size_b": null,
+      "type": "Muse Code \u00b7 contributor \u00b7 Sep 2026",
+      "tier": "Cloud",
+      "arm": "muse-cli",
+      "mti": "v2",
+      "raw_only": true,
+      "arm_n": 1,
+      "axes": {},
+      "axes_raw": {
+        "reactivity": {
+          "raw": 0.853,
+          "sd": 0.031,
+          "n": 3,
+          "unit": "length \u0394"
+        },
+        "accommodation": {
+          "raw": 0.056,
+          "sd": 0.079,
+          "n": 3,
+          "unit": "flip rate, gated 6"
+        },
+        "attending": {
+          "raw": 18.5,
+          "sd": 1.1,
+          "n": 3,
+          "unit": "words before answer, \u0394pre"
+        },
+        "verbosity": {
+          "raw": 11.0,
+          "sd": 0.4,
+          "n": 3,
+          "unit": "words, neutral"
+        }
+      },
+      "provenance": "01d4160",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.86,
+          "z": 1.175,
+          "pole": "fluid"
+        },
+        "compliance": {
+          "score": 0.58,
+          "z": -0.009,
+          "pole": "neutral"
+        },
+        "sociality": {
+          "score": 0.38,
+          "z": -0.426,
+          "pole": "solitary"
+        },
+        "resilience": {
+          "score": 0.74,
+          "z": 0.649,
+          "pole": "tough"
         }
       }
     }
