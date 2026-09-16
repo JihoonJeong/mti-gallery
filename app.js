@@ -40,60 +40,42 @@ function radar(axes, axisList) {
 function polesRow(axes, axisList) {
   return axisList.filter((ax) => axes[ax]).map((ax) => {
     const p = axes[ax].pole;
-    return `<span class="chip ${p !== "neutral" ? "hi" : ""}" title="${ax} z=${axes[ax].z}">${p}</span>`;
+    const rawLabel = ax === "stability" ? "run-sd z" : "raw";   // stability has no raw unit: it is a z of run-to-run sd
+    const tip = axes[ax].raw != null
+      ? `${ax} ${rawLabel}=${axes[ax].raw} · percentile ${axes[ax].score} among ${axes[ax].n_ref} v2 measurements (all arms, descriptive)`
+      : `${ax} z=${axes[ax].z}`;
+    return `<span class="chip ${p !== "neutral" ? "hi" : ""}" title="${tip}">${p}</span>`;
   }).join("");
 }
 
 const AXIS_NAME = { reactivity: "Reactivity", accommodation: "Accommodation", deliberation: "Deliberation",
                     attending: "Attending", verbosity: "Verbosity", stability: "Stability" };
 
-// raw-only v2 card: the arm is too small for within-arm percentiles (n<3), so the
-// card shows the instrument values themselves, with run-sd and N, and says why.
-function rawTable(raw) {
-  const rows = AXES_V2.filter((ax) => raw[ax]).map((ax) => {
-    const r = raw[ax];
-    const v = (ax === "attending" && r.raw > 0 ? "+" : "") + r.raw;
-    const sd = r.sd != null ? ` ± ${r.sd}` : "";
-    return `<tr><td>${AXIS_NAME[ax]}</td><td class="v">${v}${sd}</td><td class="u">${r.unit} · N=${r.n}</td></tr>`;
-  }).join("");
-  return `<table class="rawtab">${rows}</table>`;
-}
-
-function rawNote(m) {
-  const lang = document.documentElement.lang === "ko" ? "ko" : "en";
-  const t = (typeof translations !== "undefined" && translations[lang] && translations[lang].raw_note) || "";
-  // the n lives outside the i18n span: setLang() rewrites the span's innerHTML verbatim
-  return `<div class="rawnote"><b>${m.arm} arm, n = ${m.arm_n}.</b> <span data-i18n="raw_note">${t}</span></div>`;
-}
-
 // single-model arm: the arm is one model under n settings — percentiles and poles
 // rank those settings against each other only. Say so on the card.
 function cfgNoteHtml(m) {
   const lang = document.documentElement.lang === "ko" ? "ko" : "en";
   const t = (typeof translations !== "undefined" && translations[lang] && translations[lang].cfg_note) || "";
-  return `<div class="rawnote"><b>${m.arm} arm = 1 model × ${m.arm_n} settings.</b> <span data-i18n="cfg_note">${t}</span></div>`;
+  const what = m.single_model_arm ? `1 model × ${m.arm_n} settings` : `${m.arm_n} model${m.arm_n > 1 ? "s" : ""}`;
+  return `<div class="rawnote"><b>${m.arm} arm = ${what} · spokes = percentile among ${m.ref_n} v2 measurements, all arms.</b> <span data-i18n="cfg_note">${t}</span></div>`;
 }
 
 function card(m) {
   const armBadge = m.arm ? `<span class="armbadge" title="harness arm — profiles compare only within the same arm">${m.arm} arm</span>` : "";
   const meta = [m.family, m.size_b ? m.size_b + "B" : "", m.type].filter(Boolean).join(" · ");
   let badges, body;
-  if (m.mti === "v2" && m.raw_only) {
-    badges = `<span class="cardver-btn v2badge active" data-ver="v2" role="button">v2 · raw</span>`;
-    body = `<div class="verblock" data-ver="v2">${rawTable(m.axes_raw)}${rawNote(m)}</div>`;
-    if (m.axes_v1) {
-      badges += `<span class="cardver-btn v2badge" data-ver="v1" role="button">v1 · 4-axis</span>`;
-      body += `<div class="verblock" data-ver="v1" style="display:none">${radar(m.axes_v1, AXES_V1)}<div class="poles">${polesRow(m.axes_v1, AXES_V1)}</div></div>`;
-    }
-    badges += armBadge;
-  } else if (m.mti === "v2") {
-    const cfgNote = m.single_model_arm ? cfgNoteHtml(m) : "";
+  if (m.mti === "v2") {
+    const cfgNote = m.scale === "archive" ? cfgNoteHtml(m) : "";
+    const v2label = m.scale === "archive" ? "v2 · archive %" : "v2 · core 5";
+    const v2title = m.scale === "archive"
+      ? "spokes are descriptive percentiles among every v2 measurement on the site (all harness arms) — this arm is too small for same-arm percentiles"
+      : "core-5 pentagon, percentiles within this harness arm";
     // Default view: the core-5 pentagon — identical geometry on every v2 card,
     // so shapes compare at a glance. The +1 (Deliberation) and the v1 profile
     // are optional per-card views where measured.
     const core = AXES_CORE5.filter((ax) => m.axes[ax]);
     const hasPlus1 = !!m.axes.deliberation;
-    badges = `<span class="cardver-btn v2badge active" data-ver="v2" role="button">v2 · core 5</span>`;
+    badges = `<span class="cardver-btn v2badge active" data-ver="v2" role="button" title="${v2title}">${v2label}</span>`;
     body = `<div class="verblock" data-ver="v2">${radar(m.axes, core)}<div class="poles">${polesRow(m.axes, core)}</div>${cfgNote}</div>`;
     if (hasPlus1) {
       const full = AXES_V2.filter((ax) => m.axes[ax]);
