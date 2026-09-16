@@ -66,6 +66,14 @@ function rawNote(m) {
   return `<div class="rawnote"><b>${m.arm} arm, n = ${m.arm_n}.</b> <span data-i18n="raw_note">${t}</span></div>`;
 }
 
+// single-model arm: the arm is one model under n settings — percentiles and poles
+// rank those settings against each other only. Say so on the card.
+function cfgNoteHtml(m) {
+  const lang = document.documentElement.lang === "ko" ? "ko" : "en";
+  const t = (typeof translations !== "undefined" && translations[lang] && translations[lang].cfg_note) || "";
+  return `<div class="rawnote"><b>${m.arm} arm = 1 model × ${m.arm_n} settings.</b> <span data-i18n="cfg_note">${t}</span></div>`;
+}
+
 function card(m) {
   const armBadge = m.arm ? `<span class="armbadge" title="harness arm — profiles compare only within the same arm">${m.arm} arm</span>` : "";
   const meta = [m.family, m.size_b ? m.size_b + "B" : "", m.type].filter(Boolean).join(" · ");
@@ -79,17 +87,18 @@ function card(m) {
     }
     badges += armBadge;
   } else if (m.mti === "v2") {
+    const cfgNote = m.single_model_arm ? cfgNoteHtml(m) : "";
     // Default view: the core-5 pentagon — identical geometry on every v2 card,
     // so shapes compare at a glance. The +1 (Deliberation) and the v1 profile
     // are optional per-card views where measured.
     const core = AXES_CORE5.filter((ax) => m.axes[ax]);
     const hasPlus1 = !!m.axes.deliberation;
     badges = `<span class="cardver-btn v2badge active" data-ver="v2" role="button">v2 · core 5</span>`;
-    body = `<div class="verblock" data-ver="v2">${radar(m.axes, core)}<div class="poles">${polesRow(m.axes, core)}</div></div>`;
+    body = `<div class="verblock" data-ver="v2">${radar(m.axes, core)}<div class="poles">${polesRow(m.axes, core)}</div>${cfgNote}</div>`;
     if (hasPlus1) {
       const full = AXES_V2.filter((ax) => m.axes[ax]);
       badges += `<span class="cardver-btn v2badge" data-ver="v2p" role="button">+1 De</span>`;
-      body += `<div class="verblock" data-ver="v2p" style="display:none">${radar(m.axes, full)}<div class="poles">${polesRow(m.axes, full)}</div></div>`;
+      body += `<div class="verblock" data-ver="v2p" style="display:none">${radar(m.axes, full)}<div class="poles">${polesRow(m.axes, full)}</div>${cfgNote}</div>`;
     }
     if (m.axes_v1) {
       badges += `<span class="cardver-btn v2badge" data-ver="v1" role="button">v1 · 4-axis</span>`;
