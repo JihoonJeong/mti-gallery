@@ -1,5 +1,5 @@
 {
-  "cohort": "MTI \u2014 SLM v1 (n=12) + Cloud v1 (n=9) \u00b7 v2 (n=31) + Cursor arm v2 (n=11)",
+  "cohort": "MTI \u2014 SLM v1 (n=12) + Cloud v1 (n=9) \u00b7 v2 (n=46) + Cursor arm v2 (n=11)",
   "axes": {
     "reactivity": [
       "anchored",
@@ -401,23 +401,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.34,
-          "z": -0.617,
+          "score": 0.365,
+          "z": -0.565,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.34,
-          "z": -0.747,
+          "score": 0.365,
+          "z": -0.7,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.46,
-          "z": -0.116,
+          "score": 0.442,
+          "z": -0.167,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.34,
-          "z": -0.118,
+          "score": 0.327,
+          "z": -0.144,
           "pole": "neutral"
         }
       },
@@ -431,23 +431,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.18,
-          "z": -1.022,
+          "score": 0.212,
+          "z": -0.967,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.84,
-          "z": 0.954,
+          "score": 0.846,
+          "z": 0.993,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.98,
-          "z": 2.293,
+          "score": 0.981,
+          "z": 2.201,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.02,
-          "z": -3.032,
+          "score": 0.019,
+          "z": -3.093,
           "pole": "brittle"
         }
       },
@@ -461,23 +461,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.22,
-          "z": -0.903,
+          "score": 0.25,
+          "z": -0.849,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.84,
-          "z": 0.954,
+          "score": 0.846,
+          "z": 0.993,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.86,
-          "z": 1.295,
+          "score": 0.827,
+          "z": 1.22,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.22,
-          "z": -0.264,
+          "score": 0.212,
+          "z": -0.292,
           "pole": "neutral"
         }
       },
@@ -491,23 +491,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.62,
-          "z": 0.154,
+          "score": 0.635,
+          "z": 0.199,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.78,
-          "z": 0.723,
+          "score": 0.788,
+          "z": 0.763,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.78,
-          "z": 0.672,
+          "score": 0.75,
+          "z": 0.607,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.42,
-          "z": 0.11,
+          "score": 0.404,
+          "z": 0.087,
           "pole": "neutral"
         }
       },
@@ -521,24 +521,24 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.02,
-          "z": -1.825,
+          "score": 0.019,
+          "z": -1.763,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.7,
-          "z": 0.607,
+          "score": 0.712,
+          "z": 0.647,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.62,
-          "z": 0.313,
+          "score": 0.596,
+          "z": 0.255,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.62,
-          "z": 0.407,
-          "pole": "tough"
+          "score": 0.596,
+          "z": 0.386,
+          "pole": "neutral"
         }
       },
       "arm": "bare-byok"
@@ -551,23 +551,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.26,
-          "z": -0.844,
+          "score": 0.288,
+          "z": -0.79,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.48,
-          "z": -0.169,
+          "score": 0.5,
+          "z": -0.125,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.9,
-          "z": 1.562,
+          "score": 0.904,
+          "z": 1.482,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.26,
-          "z": -0.176,
+          "score": 0.25,
+          "z": -0.203,
           "pole": "neutral"
         }
       },
@@ -581,23 +581,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.78,
-          "z": 0.932,
+          "score": 0.788,
+          "z": 0.97,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.62,
-          "z": 0.312,
+          "score": 0.635,
+          "z": 0.354,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.94,
-          "z": 1.662,
+          "score": 0.942,
+          "z": 1.581,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.52,
-          "z": 0.227,
+          "score": 0.5,
+          "z": 0.204,
           "pole": "neutral"
         }
       },
@@ -611,23 +611,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.38,
-          "z": -0.331,
+          "score": 0.404,
+          "z": -0.282,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.66,
-          "z": 0.544,
+          "score": 0.673,
+          "z": 0.585,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.74,
-          "z": 0.527,
+          "score": 0.712,
+          "z": 0.465,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.46,
-          "z": 0.188,
+          "score": 0.442,
+          "z": 0.165,
           "pole": "neutral"
         }
       },
@@ -641,23 +641,23 @@
       "tier": "Cloud",
       "axes": {
         "reactivity": {
-          "score": 0.1,
-          "z": -1.278,
+          "score": 0.096,
+          "z": -1.221,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.3,
-          "z": -0.954,
+          "score": 0.327,
+          "z": -0.906,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.1,
-          "z": -1.085,
+          "score": 0.096,
+          "z": -1.12,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.86,
-          "z": 0.921,
+          "score": 0.865,
+          "z": 0.907,
           "pole": "tough"
         }
       },
@@ -703,7 +703,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.409,
@@ -767,7 +767,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.773,
@@ -831,7 +831,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.682,
@@ -895,7 +895,7 @@
           "pole": "neutral"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.5,
@@ -959,7 +959,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.955,
@@ -1023,7 +1023,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.864,
@@ -1087,7 +1087,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.591,
@@ -1151,7 +1151,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.136,
@@ -1215,7 +1215,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.318,
@@ -1279,7 +1279,7 @@
           "pole": "neutral"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.227,
@@ -1343,7 +1343,7 @@
           "pole": "neutral"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
           "score": 0.045,
@@ -1402,26 +1402,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.42,
-          "z": -0.279,
+          "score": 0.442,
+          "z": -0.229,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.08,
-          "z": -1.132,
+          "score": 0.096,
+          "z": -1.084,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.3,
-          "z": -0.721,
+          "score": 0.288,
+          "z": -0.762,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.78,
-          "z": 0.853,
+          "score": 0.788,
+          "z": 0.838,
           "pole": "tough"
         }
       }
@@ -1461,26 +1461,26 @@
           "pole": "neutral"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.94,
-          "z": 1.408,
+          "score": 0.942,
+          "z": 1.443,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.08,
-          "z": -1.132,
+          "score": 0.096,
+          "z": -1.084,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.14,
-          "z": -0.898,
+          "score": 0.135,
+          "z": -0.936,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.52,
-          "z": 0.227,
+          "score": 0.5,
+          "z": 0.204,
           "pole": "neutral"
         }
       }
@@ -1520,26 +1520,26 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.7,
-          "z": 0.662,
+          "score": 0.712,
+          "z": 0.703,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.22,
-          "z": -0.972,
+          "score": 0.25,
+          "z": -0.924,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.34,
-          "z": -0.635,
+          "score": 0.327,
+          "z": -0.677,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.98,
-          "z": 1.038,
+          "score": 0.981,
+          "z": 1.025,
           "pole": "tough"
         }
       }
@@ -1579,26 +1579,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.9,
-          "z": 1.23,
+          "score": 0.904,
+          "z": 1.266,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.22,
-          "z": -0.972,
+          "score": 0.25,
+          "z": -0.924,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.26,
-          "z": -0.84,
+          "score": 0.25,
+          "z": -0.879,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.9,
-          "z": 1.019,
+          "score": 0.904,
+          "z": 1.005,
           "pole": "tough"
         }
       }
@@ -1638,26 +1638,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.58,
-          "z": 0.108,
+          "score": 0.596,
+          "z": 0.154,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.08,
-          "z": -1.132,
+          "score": 0.096,
+          "z": -1.084,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.22,
-          "z": -0.845,
+          "score": 0.212,
+          "z": -0.884,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.82,
-          "z": 0.868,
+          "score": 0.827,
+          "z": 0.853,
           "pole": "tough"
         }
       }
@@ -1697,7 +1697,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
     },
     {
       "model": "gpt-5.4-mini (low)",
@@ -1734,7 +1734,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
     },
     {
       "model": "claude-haiku-4.5",
@@ -1771,26 +1771,26 @@
           "pole": "neutral"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.98,
-          "z": 2.292,
+          "score": 0.981,
+          "z": 2.319,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.38,
-          "z": -0.651,
+          "score": 0.404,
+          "z": -0.604,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.18,
-          "z": -0.866,
+          "score": 0.173,
+          "z": -0.905,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.06,
-          "z": -2.066,
+          "score": 0.058,
+          "z": -2.115,
           "pole": "brittle"
         }
       }
@@ -1830,26 +1830,26 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.74,
-          "z": 0.909,
+          "score": 0.75,
+          "z": 0.949,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.08,
-          "z": -1.132,
+          "score": 0.096,
+          "z": -1.084,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.06,
-          "z": -1.694,
+          "score": 0.058,
+          "z": -1.719,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.94,
-          "z": 1.028,
+          "score": 0.942,
+          "z": 1.015,
           "pole": "tough"
         }
       }
@@ -1889,26 +1889,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.66,
-          "z": 0.65,
+          "score": 0.673,
+          "z": 0.691,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.42,
-          "z": -0.329,
+          "score": 0.442,
+          "z": -0.285,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.5,
-          "z": -0.1,
+          "score": 0.481,
+          "z": -0.151,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.3,
-          "z": -0.147,
+          "score": 0.288,
+          "z": -0.174,
           "pole": "neutral"
         }
       }
@@ -1948,26 +1948,26 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.5,
-          "z": -0.134,
+          "score": 0.519,
+          "z": -0.087,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.54,
-          "z": -0.073,
+          "score": 0.558,
+          "z": -0.029,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.7,
-          "z": 0.419,
-          "pole": "social"
+          "score": 0.673,
+          "z": 0.359,
+          "pole": "neutral"
         },
         "resilience": {
-          "score": 0.38,
-          "z": 0.086,
+          "score": 0.365,
+          "z": 0.062,
           "pole": "neutral"
         }
       }
@@ -2007,26 +2007,26 @@
           "pole": "neutral"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.82,
-          "z": 0.956,
+          "score": 0.827,
+          "z": 0.994,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.48,
-          "z": -0.169,
+          "score": 0.5,
+          "z": -0.125,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.02,
-          "z": -1.74,
+          "score": 0.019,
+          "z": -1.764,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.58,
-          "z": 0.377,
+          "score": 0.558,
+          "z": 0.357,
           "pole": "neutral"
         }
       }
@@ -2066,7 +2066,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
     },
     {
       "model": "claude-sonnet-4.6 (low)",
@@ -2103,7 +2103,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
     },
     {
       "model": "claude-opus-4.8 (low)",
@@ -2140,7 +2140,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
     },
     {
       "model": "grok-4.5",
@@ -2177,26 +2177,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.46,
-          "z": -0.226,
+          "score": 0.481,
+          "z": -0.177,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.22,
-          "z": -0.972,
+          "score": 0.25,
+          "z": -0.924,
           "pole": "independent"
         },
         "sociality": {
-          "score": 0.54,
-          "z": 0.149,
+          "score": 0.519,
+          "z": 0.093,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.7,
-          "z": 0.611,
+          "score": 0.673,
+          "z": 0.593,
           "pole": "tough"
         }
       }
@@ -2236,7 +2236,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
     },
     {
       "model": "grok-4.6",
@@ -2273,7 +2273,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
     },
     {
       "model": "grok-4.6 (low)",
@@ -2310,7 +2310,7 @@
           "pole": "neutral"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
     },
     {
       "model": "gemini-3.6-flash",
@@ -2347,26 +2347,26 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.14,
-          "z": -1.077,
+          "score": 0.173,
+          "z": -1.021,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.9,
-          "z": 1.436,
+          "score": 0.904,
+          "z": 1.473,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.58,
-          "z": 0.163,
+          "score": 0.558,
+          "z": 0.107,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.1,
-          "z": -1.643,
+          "score": 0.096,
+          "z": -1.687,
           "pole": "brittle"
         }
       }
@@ -2406,7 +2406,7 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
     },
     {
       "model": "gemini-3.5-flash",
@@ -2443,26 +2443,26 @@
           "pole": "neutral"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.54,
-          "z": -0.035,
+          "score": 0.558,
+          "z": 0.012,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.94,
-          "z": 2.078,
+          "score": 0.942,
+          "z": 2.112,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.66,
-          "z": 0.315,
+          "score": 0.635,
+          "z": 0.257,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.66,
-          "z": 0.513,
+          "score": 0.635,
+          "z": 0.494,
           "pole": "tough"
         }
       }
@@ -2502,26 +2502,26 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705",
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.06,
-          "z": -1.285,
+          "score": 0.058,
+          "z": -1.227,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.74,
-          "z": 0.698,
+          "score": 0.75,
+          "z": 0.738,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.82,
-          "z": 0.721,
+          "score": 0.788,
+          "z": 0.656,
           "pole": "social"
         },
         "resilience": {
-          "score": 0.18,
-          "z": -0.472,
+          "score": 0.173,
+          "z": -0.503,
           "pole": "brittle"
         }
       }
@@ -2561,7 +2561,7 @@
           "pole": "steady"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
     },
     {
       "model": "gemini-3.1-pro (low)",
@@ -2598,7 +2598,584 @@
           "pole": "variable"
         }
       },
-      "provenance": "0a0a705"
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "ax-3.1",
+      "family": "SKT",
+      "size_b": null,
+      "type": "A.X 3.1 \u00b7 open weights",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.1,
+          "z": -1.135,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.633,
+          "z": 0.552,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.233,
+          "z": -1.182,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.633,
+          "z": 0.34,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.433,
+          "z": -0.204,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "exaone-4.0-32b",
+      "family": "LG AI Research",
+      "size_b": null,
+      "type": "EXAONE 4.0 \u00b7 32B",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.567,
+          "z": -0.015,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.367,
+          "z": -0.039,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.3,
+          "z": -0.768,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.567,
+          "z": 0.336,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.5,
+          "z": 0.104,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "hyperclovax-seed-32b",
+      "family": "NAVER",
+      "size_b": null,
+      "type": "HyperCLOVA X SEED \u00b7 32B",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.233,
+          "z": -0.662,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.8,
+          "z": 0.946,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.033,
+          "z": -1.222,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.967,
+          "z": 1.352,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.633,
+          "z": 0.361,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "kanana-2-30b-a3b",
+      "family": "Kakao",
+      "size_b": null,
+      "type": "Kanana 2 \u00b7 30B-A3B",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.767,
+          "z": 0.381,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.233,
+          "z": -1.025,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.367,
+          "z": -0.67,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.5,
+          "z": 0.134,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.7,
+          "z": 0.454,
+          "pole": "variable"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "midm-2.0-base",
+      "family": "KT",
+      "size_b": null,
+      "type": "Mi:dm 2.0 Base \u00b7 Attending on 6/9 items",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.833,
+          "z": 0.613,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.8,
+          "z": 0.946,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.567,
+          "z": 0.387,
+          "pole": "neutral"
+        },
+        "verbosity": {
+          "score": 0.033,
+          "z": -1.959,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.567,
+          "z": 0.188,
+          "pole": "neutral"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "solar-open-100b",
+      "family": "Upstage",
+      "size_b": null,
+      "type": "Solar Open \u00b7 100B",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.5,
+          "z": -0.042,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.067,
+          "z": -1.682,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.767,
+          "z": 0.812,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.767,
+          "z": 0.888,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.9,
+          "z": 1.581,
+          "pole": "variable"
+        }
+      },
+      "provenance": "1aaf22a",
+      "axes_v1": {
+        "reactivity": {
+          "score": 0.135,
+          "z": -1.168,
+          "pole": "anchored"
+        },
+        "compliance": {
+          "score": 0.096,
+          "z": -1.084,
+          "pole": "independent"
+        },
+        "sociality": {
+          "score": 0.865,
+          "z": 1.329,
+          "pole": "social"
+        },
+        "resilience": {
+          "score": 0.712,
+          "z": 0.627,
+          "pole": "tough"
+        }
+      }
+    },
+    {
+      "model": "llama-3.3-70b",
+      "family": "Meta",
+      "size_b": null,
+      "type": "Llama 3.3 \u00b7 70B",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.033,
+          "z": -1.22,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.933,
+          "z": 1.274,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.7,
+          "z": 0.637,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.433,
+          "z": -0.056,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.3,
+          "z": -0.727,
+          "pole": "steady"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "gpt-oss-120b",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "gpt-oss \u00b7 120B",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.367,
+          "z": -0.486,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.933,
+          "z": 1.274,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.967,
+          "z": 2.084,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.7,
+          "z": 0.645,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.767,
+          "z": 0.497,
+          "pole": "variable"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "gpt-oss-20b",
+      "family": "OpenAI",
+      "size_b": null,
+      "type": "gpt-oss \u00b7 20B",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.167,
+          "z": -0.878,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.3,
+          "z": -0.696,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.5,
+          "z": 0.125,
+          "pole": "neutral"
+        },
+        "verbosity": {
+          "score": 0.233,
+          "z": -0.775,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.167,
+          "z": -0.853,
+          "pole": "steady"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "nemotron-super-120b",
+      "family": "NVIDIA",
+      "size_b": null,
+      "type": "Nemotron Super \u00b7 120B",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.633,
+          "z": 0.013,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.5,
+          "z": 0.289,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.9,
+          "z": 1.142,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.9,
+          "z": 1.178,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.1,
+          "z": -1.559,
+          "pole": "steady"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "nemotron-nano-30b",
+      "family": "NVIDIA",
+      "size_b": null,
+      "type": "Nemotron Nano \u00b7 30B",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.7,
+          "z": 0.215,
+          "pole": "neutral"
+        },
+        "accommodation": {
+          "score": 0.7,
+          "z": 0.618,
+          "pole": "accommodating"
+        },
+        "attending": {
+          "score": 0.833,
+          "z": 0.941,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.367,
+          "z": -0.083,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.967,
+          "z": 1.746,
+          "pole": "variable"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "nemotron-omni-30b",
+      "family": "NVIDIA",
+      "size_b": null,
+      "type": "Nemotron Omni \u00b7 30B",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.9,
+          "z": 1.499,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.5,
+          "z": 0.289,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.633,
+          "z": 0.529,
+          "pole": "person-first"
+        },
+        "verbosity": {
+          "score": 0.167,
+          "z": -0.988,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.833,
+          "z": 1.261,
+          "pole": "variable"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "glm-4.7-flash",
+      "family": "Zhipu",
+      "size_b": null,
+      "type": "GLM 4.7 Flash",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.3,
+          "z": -0.558,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.067,
+          "z": -1.682,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.433,
+          "z": -0.434,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.1,
+          "z": -1.936,
+          "pole": "terse"
+        },
+        "stability": {
+          "score": 0.367,
+          "z": -0.421,
+          "pole": "steady"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "qwen3-coder",
+      "family": "Alibaba",
+      "size_b": null,
+      "type": "Qwen3 Coder",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.967,
+          "z": 2.728,
+          "pole": "fluid"
+        },
+        "accommodation": {
+          "score": 0.167,
+          "z": -1.353,
+          "pole": "steadfast"
+        },
+        "attending": {
+          "score": 0.133,
+          "z": -1.191,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.3,
+          "z": -0.147,
+          "pole": "neutral"
+        },
+        "stability": {
+          "score": 0.233,
+          "z": -0.777,
+          "pole": "steady"
+        }
+      },
+      "provenance": "1aaf22a"
+    },
+    {
+      "model": "qwen2.5-vl-72b",
+      "family": "Alibaba",
+      "size_b": null,
+      "type": "Qwen2.5-VL \u00b7 72B \u00b7 N=2, served deterministically",
+      "tier": "Cloud",
+      "arm": "gitc",
+      "mti": "v2",
+      "axes": {
+        "reactivity": {
+          "score": 0.433,
+          "z": -0.454,
+          "pole": "anchored"
+        },
+        "accommodation": {
+          "score": 0.5,
+          "z": 0.289,
+          "pole": "neutral"
+        },
+        "attending": {
+          "score": 0.133,
+          "z": -1.191,
+          "pole": "task-first"
+        },
+        "verbosity": {
+          "score": 0.833,
+          "z": 1.069,
+          "pole": "expansive"
+        },
+        "stability": {
+          "score": 0.033,
+          "z": -1.651,
+          "pole": "steady"
+        }
+      },
+      "provenance": "1aaf22a"
     },
     {
       "model": "solar-mini4-preview",
@@ -2610,66 +3187,66 @@
       "mti": "v2",
       "axes": {
         "reactivity": {
-          "score": 0.179,
+          "score": 0.36,
           "raw": 0.497,
-          "n_ref": 42,
-          "pole": "anchored"
+          "n_ref": 57,
+          "pole": "neutral"
         },
         "accommodation": {
-          "score": 0.714,
+          "score": 0.614,
           "raw": 0.767,
-          "n_ref": 42,
-          "pole": "accommodating"
+          "n_ref": 57,
+          "pole": "neutral"
         },
         "attending": {
-          "score": 0.583,
+          "score": 0.535,
           "raw": 9.63,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "neutral"
         },
         "verbosity": {
-          "score": 0.964,
+          "score": 0.781,
           "raw": 47.704,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "expansive"
         },
         "stability": {
-          "score": 0.702,
-          "raw": 0.268,
-          "n_ref": 42,
+          "score": 0.693,
+          "raw": 0.257,
+          "n_ref": 57,
           "pole": "variable"
         },
         "deliberation": {
-          "score": 0.036,
+          "score": 0.033,
           "raw": 0.0,
-          "n_ref": 14,
+          "n_ref": 15,
           "pole": "instinctive"
         }
       },
       "scale": "archive",
       "single_model_arm": true,
       "arm_n": 3,
-      "ref_n": 42,
-      "provenance": "0a0a705",
+      "ref_n": 57,
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.3,
-          "z": -0.619,
+          "score": 0.327,
+          "z": -0.567,
           "pole": "anchored"
         },
         "compliance": {
-          "score": 0.98,
-          "z": 2.238,
+          "score": 0.981,
+          "z": 2.272,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.42,
-          "z": -0.126,
+          "score": 0.404,
+          "z": -0.177,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.14,
-          "z": -1.206,
+          "score": 0.135,
+          "z": -1.245,
           "pole": "brittle"
         }
       }
@@ -2684,66 +3261,66 @@
       "mti": "v2",
       "axes": {
         "reactivity": {
-          "score": 0.631,
+          "score": 0.711,
           "raw": 0.682,
-          "n_ref": 42,
-          "pole": "neutral"
+          "n_ref": 57,
+          "pole": "fluid"
         },
         "accommodation": {
-          "score": 0.607,
+          "score": 0.526,
           "raw": 0.667,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "neutral"
         },
         "attending": {
-          "score": 0.607,
+          "score": 0.553,
           "raw": 10.074,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "neutral"
         },
         "verbosity": {
-          "score": 0.94,
+          "score": 0.763,
           "raw": 45.963,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "expansive"
         },
         "stability": {
-          "score": 0.893,
-          "raw": 0.775,
-          "n_ref": 42,
+          "score": 0.868,
+          "raw": 0.688,
+          "n_ref": 57,
           "pole": "variable"
         },
         "deliberation": {
-          "score": 0.464,
+          "score": 0.5,
           "raw": 54.833,
-          "n_ref": 14,
+          "n_ref": 15,
           "pole": "neutral"
         }
       },
       "scale": "archive",
       "single_model_arm": true,
       "arm_n": 3,
-      "ref_n": 42,
-      "provenance": "0a0a705",
+      "ref_n": 57,
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.64,
-          "z": 0.311,
+          "score": 0.654,
+          "z": 0.355,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.64,
-          "z": 0.473,
+          "score": 0.654,
+          "z": 0.514,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.68,
-          "z": 0.365,
+          "score": 0.654,
+          "z": 0.305,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.2,
-          "z": -0.298,
+          "score": 0.192,
+          "z": -0.326,
           "pole": "neutral"
         }
       }
@@ -2758,66 +3335,66 @@
       "mti": "v2",
       "axes": {
         "reactivity": {
-          "score": 0.583,
+          "score": 0.675,
           "raw": 0.66,
-          "n_ref": 42,
-          "pole": "neutral"
+          "n_ref": 57,
+          "pole": "fluid"
         },
         "accommodation": {
-          "score": 0.714,
+          "score": 0.614,
           "raw": 0.767,
-          "n_ref": 42,
-          "pole": "accommodating"
+          "n_ref": 57,
+          "pole": "neutral"
         },
         "attending": {
-          "score": 0.536,
+          "score": 0.482,
           "raw": 8.259,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "neutral"
         },
         "verbosity": {
-          "score": 0.988,
+          "score": 0.798,
           "raw": 48.444,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "expansive"
         },
         "stability": {
-          "score": 0.607,
-          "raw": 0.107,
-          "n_ref": 42,
+          "score": 0.623,
+          "raw": 0.089,
+          "n_ref": 57,
           "pole": "neutral"
         },
         "deliberation": {
-          "score": 0.536,
+          "score": 0.567,
           "raw": 60.667,
-          "n_ref": 14,
+          "n_ref": 15,
           "pole": "neutral"
         }
       },
       "scale": "archive",
       "single_model_arm": true,
       "arm_n": 3,
-      "ref_n": 42,
-      "provenance": "0a0a705",
+      "ref_n": 57,
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.64,
-          "z": 0.2,
+          "score": 0.654,
+          "z": 0.245,
           "pole": "neutral"
         },
         "compliance": {
-          "score": 0.84,
-          "z": 0.954,
+          "score": 0.846,
+          "z": 0.993,
           "pole": "guided"
         },
         "sociality": {
-          "score": 0.52,
-          "z": -0.049,
+          "score": 0.5,
+          "z": -0.101,
           "pole": "neutral"
         },
         "resilience": {
-          "score": 0.2,
-          "z": -0.351,
+          "score": 0.192,
+          "z": -0.38,
           "pole": "neutral"
         }
       }
@@ -2832,41 +3409,41 @@
       "mti": "v2",
       "axes": {
         "reactivity": {
-          "score": 0.655,
+          "score": 0.728,
           "raw": 0.686,
-          "n_ref": 42,
-          "pole": "neutral"
+          "n_ref": 57,
+          "pole": "fluid"
         },
         "accommodation": {
-          "score": 0.036,
+          "score": 0.026,
           "raw": 0.111,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "steadfast"
         },
         "attending": {
-          "score": 0.798,
+          "score": 0.711,
           "raw": 19.593,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "person-first"
         },
         "verbosity": {
-          "score": 0.179,
+          "score": 0.132,
           "raw": 11.63,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "terse"
         },
         "stability": {
-          "score": 0.94,
-          "raw": 0.962,
-          "n_ref": 42,
+          "score": 0.904,
+          "raw": 0.821,
+          "n_ref": 57,
           "pole": "variable"
         }
       },
       "scale": "archive",
       "single_model_arm": true,
       "arm_n": 3,
-      "ref_n": 42,
-      "provenance": "0a0a705"
+      "ref_n": 57,
+      "provenance": "1aaf22a"
     },
     {
       "model": "muse-spark-1.3",
@@ -2878,60 +3455,60 @@
       "mti": "v2",
       "axes": {
         "reactivity": {
-          "score": 0.917,
+          "score": 0.939,
           "raw": 0.853,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "fluid"
         },
         "accommodation": {
-          "score": 0.012,
+          "score": 0.009,
           "raw": 0.056,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "steadfast"
         },
         "attending": {
-          "score": 0.726,
+          "score": 0.658,
           "raw": 18.518,
-          "n_ref": 42,
-          "pole": "person-first"
+          "n_ref": 57,
+          "pole": "neutral"
         },
         "verbosity": {
-          "score": 0.131,
+          "score": 0.096,
           "raw": 11.037,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "terse"
         },
         "stability": {
-          "score": 0.274,
-          "raw": -0.316,
-          "n_ref": 42,
-          "pole": "steady"
+          "score": 0.395,
+          "raw": -0.213,
+          "n_ref": 57,
+          "pole": "neutral"
         }
       },
       "scale": "archive",
       "single_model_arm": true,
       "arm_n": 3,
-      "ref_n": 42,
-      "provenance": "0a0a705",
+      "ref_n": 57,
+      "provenance": "1aaf22a",
       "axes_v1": {
         "reactivity": {
-          "score": 0.86,
-          "z": 1.175,
+          "score": 0.865,
+          "z": 1.212,
           "pole": "fluid"
         },
         "compliance": {
-          "score": 0.58,
-          "z": -0.009,
+          "score": 0.596,
+          "z": 0.035,
           "pole": "neutral"
         },
         "sociality": {
-          "score": 0.38,
-          "z": -0.426,
+          "score": 0.365,
+          "z": -0.472,
           "pole": "solitary"
         },
         "resilience": {
-          "score": 0.74,
-          "z": 0.649,
+          "score": 0.75,
+          "z": 0.632,
           "pole": "tough"
         }
       }
@@ -2946,41 +3523,41 @@
       "mti": "v2",
       "axes": {
         "reactivity": {
-          "score": 0.845,
+          "score": 0.886,
           "raw": 0.777,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "fluid"
         },
         "accommodation": {
-          "score": 0.131,
+          "score": 0.096,
           "raw": 0.244,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "steadfast"
         },
         "attending": {
-          "score": 0.821,
+          "score": 0.728,
           "raw": 20.593,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "person-first"
         },
         "verbosity": {
-          "score": 0.274,
+          "score": 0.202,
           "raw": 12.556,
-          "n_ref": 42,
+          "n_ref": 57,
           "pole": "terse"
         },
         "stability": {
-          "score": 0.583,
-          "raw": 0.077,
-          "n_ref": 42,
+          "score": 0.377,
+          "raw": -0.23,
+          "n_ref": 57,
           "pole": "neutral"
         }
       },
       "scale": "archive",
       "single_model_arm": true,
       "arm_n": 3,
-      "ref_n": 42,
-      "provenance": "0a0a705"
+      "ref_n": 57,
+      "provenance": "1aaf22a"
     }
   ]
 }
